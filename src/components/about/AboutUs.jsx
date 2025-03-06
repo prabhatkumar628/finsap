@@ -18,25 +18,25 @@ export default function AboutUs() {
                     About Us
                 </h1>
                 <div className={`${unbounded.className} grid grid-cols-12 gap-6 lg:gap-12 mt-4`}>
-                    <div className='col-span-12 md:col-span-8 flex flex-col gap-10'>
+                    <div className='col-span-12 md:col-span-8 flex flex-col gap-4 md:gap-10'>
 
                         <h2 className=" text-2xl sm:text-3xl md:text-5xl text-[#043e96] w-fit flex flex-col pt-2 gap-0">
                             <span className={`font-extralight`}> Empowering Businesses
                                 <br />with SAP Expertise</span>
                         </h2>
-                        <p className='text-[#043e96] text-xl tracking-widest font-light'>
+                        <p className='text-[#043e96] text-xl sm:tracking-widest font-light'>
                             As a growing IT consulting firm, Finnsap specializes in
                             delivering high-impact SAP solutions. We guide businesses
                             and government entities worldwide in leveraging top-tier ERP
                             systems and intelligence tools from SAP.
                         </p>
-                        <p className='text-[#043e96] text-xl tracking-widest font-light'>
+                        <p className='text-[#043e96] text-xl sm:tracking-widest font-light'>
                             Finnsap boasts deep industry expertise, particularly within the
                             Utilities and Public Sector. We forge strategic partnerships,
                             delivering tailored solutions that address unique business
                             challenges.
                         </p>
-                        <p className='text-[#043e96] text-xl tracking-widest font-light'>
+                        <p className='text-[#043e96] text-xl sm:tracking-widest font-light'>
                             Headquartered in India, we serve clients globally. Our team of
                             experienced consultants, encompassing technical and
                             functional SAP specialists, ensures successful project delivery

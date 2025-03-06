@@ -6,9 +6,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { IoChevronDownSharp } from "react-icons/io5";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Raleway } from 'next/font/google'
+import { usePathname } from "next/navigation";
 export const raleway = Raleway({ subsets: ['latin'], weight: ['500'] })
 
 export default function Header() {
@@ -16,6 +17,10 @@ export default function Header() {
     const [services, setServices] = useState(false)
     const [sapServices, setSapServices] = useState(false)
     const [appServices, setAppServices] = useState(false)
+    const pathname = usePathname()
+    useEffect(()=>{
+        setMenu(false)
+    },[pathname])
     return (
 
 
