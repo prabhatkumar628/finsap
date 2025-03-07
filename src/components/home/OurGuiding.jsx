@@ -5,7 +5,7 @@ export default function OurGuiding() {
     return (
         <>
             <div className="w-full md:p-14 bg-white flex justify-center items-center relative">
-                <div className="w-full h-full md:min-h-[70vh] xl:min-h-[80vh] flex-1 border-2 border-[#8ea8d0] hidden md:block"></div>
+                <div className="w-full h-full md:min-h-[600px] xl:min-h-[80vh] flex-1 border-2 border-[#8ea8d0] hidden md:block"></div>
 
                 <div className=" static md:absolute w-full mx-auto h-auto left-0 md:top-[50%] md:translate-y-[-50%]">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-7xl tracking-wider text-[#043e96] py-4 md:pt-0 md:pb-8 mb-4 md:mb-10 text-center relative after:absolute after:content-[''] after:w-[80px] after:h-[2px] after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:bg-[#0ed4ff]">

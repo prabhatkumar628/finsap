@@ -7,6 +7,7 @@ import { RxCross2 } from "react-icons/rx";
 import { IoChevronDownSharp } from "react-icons/io5";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import "./layout.css"
 
 import { Raleway } from 'next/font/google'
 import { usePathname } from "next/navigation";
@@ -18,9 +19,10 @@ export default function Header() {
     const [sapServices, setSapServices] = useState(false)
     const [appServices, setAppServices] = useState(false)
     const pathname = usePathname()
-    useEffect(()=>{
+    useEffect(() => {
         setMenu(false)
-    },[pathname])
+        setServices(false)
+    }, [pathname])
     return (
 
 
@@ -50,11 +52,11 @@ export default function Header() {
                             <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/"}>Home</Link>
                         </li>
                         <li className={`${raleway.className} flex flex-col`}>
-                            <div onClick={()=>setServices(pre=>!pre)} className={`${services?"font-semibold !text-[#0ed4ff]":""} text-[#043e96] cursor-pointer hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 flex items-center lg:gap-1 w-full`}>
+                            <div onClick={() => setServices(pre => !pre)} className={`${services ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] cursor-pointer hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 flex items-center lg:gap-1 w-full`}>
                                 <span>Services</span>
                                 <IoChevronDownSharp className="hidden md:block" />
                             </div>
-                            <div style={{ boxShadow: "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px" }} className={`w-full ${services?"md:max-h-[300px]":"md:!shadow-none md:!py-0"} transition-all duration-300 ease-in-out md:max-h-0 md:overflow-hidden md:absolute top-[120%] left-0 rounded-md bg-white grid grid-cols-12 p-2 md:p-4 xl:px-10 xl:py-6 gap-2 z-50`}>
+                            <div className={`services w-full ${services ? "md:max-h-[300px]" : "md:!shadow-none md:!py-0"} transition-all duration-300 ease-in-out md:max-h-0 md:overflow-hidden md:absolute top-[120%] left-0 rounded-md bg-white grid grid-cols-12 p-2 md:p-4 xl:px-10 xl:py-6 gap-2 z-50`}>
                                 <div className="col-span-12 md:col-span-4 lg:col-span-3">
                                     <div
                                         onClick={() => setSapServices(prev => !prev)}
@@ -66,22 +68,22 @@ export default function Header() {
 
                                     <ul className={`overflow-hidden transition-all duration-300 ease-in-out ${sapServices ? "max-h-[200px] opacity-100 pt-2" : "max-h-0 opacity-0"} md:pt-2 md:max-h-none md:opacity-100`}>
                                         <li className="flex">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>SAP Services Portfolio</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-Services-Portfolio"}>SAP Services Portfolio</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>SAP ERP Consulting</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-EPR-Consulting"}>SAP ERP Consulting</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>SAP IS-Utilities Consulting</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-IS-Utilities-Consulting"}>SAP IS-Utilities Consulting</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>SAP BRIM Consulting</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-BRIM-Consulting"}>SAP BRIM Consulting</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>SAP ECC-S4HANA AMS</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-ECC-S4HANA-AMS"}>SAP ECC-S4HANA AMS</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>SAP AMI Consulting</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-AMI-Consulting"}>SAP AMI Consulting</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -96,16 +98,16 @@ export default function Header() {
 
                                     <ul className={`overflow-hidden transition-all duration-300 ease-in-out ${appServices ? "max-h-[200px] opacity-100 pt-2" : "max-h-0 opacity-0"} md:pt-2 md:max-h-none md:opacity-100`}>
                                         <li className="flex">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>Web Debelopment</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Web-Development"}>Web Debelopment</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>Web Support</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Web-Support"}>Web Support</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>Mobile App Development</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Mobile-App-Development"}>Mobile App Development</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/"}>Mobile App Support</Link>
+                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Mobile-App-Support"}>Mobile App Support</Link>
                                         </li>
                                     </ul>
                                 </div>

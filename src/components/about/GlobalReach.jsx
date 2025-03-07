@@ -19,7 +19,7 @@ export default function GlobalReach() {
                         <span className={`${unbounded.className} tracking-widest md:font-semibold`}>Global</span>
                         <span className={`${unbounded.className} font-extralight`}>Reach</span>
                     </h3>
-                    <p className='md:text-[#043e96] md:tracking-widest font-medium'>
+                    <p className={`${unbounded.className} text-[#043e96] md:tracking-widest font-light mt-1 sm:mt-2`}>
                         Finnsap's global reach extends across key<br className='hidden md:block'/>
                         markets, including Europe, South Africa, the<br className='hidden md:block'/>
                         United States, and headquartered in India.<br className='hidden md:block'/>
