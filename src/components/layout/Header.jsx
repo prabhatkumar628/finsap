@@ -60,7 +60,7 @@ export default function Header() {
                                 <div className="col-span-12 md:col-span-4 lg:col-span-3">
                                     <div
                                         onClick={() => setSapServices(prev => !prev)}
-                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#142141] hover:text-[#0ed4ff] transition"
+                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#043e96] hover:text-[#0ed4ff] transition"
                                     >
                                         <span>SAP Services</span>
                                         <IoChevronDownSharp className={`md:hidden transition-transform duration-300 ${sapServices ? "rotate-180" : ""}`} />
@@ -68,29 +68,29 @@ export default function Header() {
 
                                     <ul className={`overflow-hidden transition-all duration-300 ease-in-out ${sapServices ? "max-h-[200px] opacity-100 pt-2" : "max-h-0 opacity-0"} md:pt-2 md:max-h-none md:opacity-100`}>
                                         <li className="flex">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-Services-Portfolio"}>SAP Services Portfolio</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-Services-Portfolio"}>SAP Services Portfolio</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-EPR-Consulting"}>SAP ERP Consulting</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-EPR-Consulting"}>SAP ERP Consulting</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-IS-Utilities-Consulting"}>SAP IS-Utilities Consulting</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-IS-Utilities-Consulting"}>SAP IS-Utilities Consulting</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-BRIM-Consulting"}>SAP BRIM Consulting</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-BRIM-Consulting"}>SAP BRIM Consulting</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-ECC-S4HANA-AMS"}>SAP ECC-S4HANA AMS</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-ECC-S4HANA-AMS"}>SAP ECC-S4HANA AMS</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-AMI-Consulting"}>SAP AMI Consulting</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/SAP-Services/SAP-AMI-Consulting"}>SAP AMI Consulting</Link>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-span-12 md:col-span-4 lg:col-span-3">
                                     <div
                                         onClick={() => setAppServices(prev => !prev)}
-                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#142141] hover:text-[#0ed4ff] transition"
+                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#043e96] hover:text-[#0ed4ff] transition"
                                     >
                                         <span>Web & App Services</span>
                                         <IoChevronDownSharp className={`md:hidden transition-transform duration-300 ${appServices ? "rotate-180" : ""}`} />
@@ -98,20 +98,22 @@ export default function Header() {
 
                                     <ul className={`overflow-hidden transition-all duration-300 ease-in-out ${appServices ? "max-h-[200px] opacity-100 pt-2" : "max-h-0 opacity-0"} md:pt-2 md:max-h-none md:opacity-100`}>
                                         <li className="flex">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Web-Development"}>Web Debelopment</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Web-Development"}>Web Debelopment</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Web-Support"}>Web Support</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Web-Support"}>Web Support</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Mobile-App-Development"}>Mobile App Development</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Mobile-App-Development"}>Mobile App Development</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className="text-[#142141] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Mobile-App-Support"}>Mobile App Support</Link>
+                                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full" href={"/services/Web-and-App-Services/Mobile-App-Support"}>Mobile App Support</Link>
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-span-12 md:col-span-4 lg:col-span-6 hidden md:block bg-red-700"></div>
+                                <div className="col-span-12 md:col-span-4 lg:col-span-6 hidden text-center border-2 md:grid place-items-center text-5xl">
+                                    I Need Content for write Here
+                                </div>
                             </div>
                         </li>
 
