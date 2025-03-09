@@ -3,7 +3,6 @@ import { PiGearLight } from "react-icons/pi";
 import { Unbounded } from 'next/font/google'
 const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
 
-
 export default function SapServicesPortfolio() {
   return (
     <>
@@ -13,17 +12,17 @@ export default function SapServicesPortfolio() {
             Our Offerings
           </p>
         </div>
-
         <div className="w-full h-full px-4 py-6  md:p-6 lg:px-12 md:pb-12 flex-1 border-2 border-[#8ea8d0]">
           <div className={unbounded.className}>
-            <h1 className="text-3xl md:text-4xl xl:text-5xl py-2 flex gap-2 sm:items-center font-light text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
-              <PiGearLight className='text-4xl md:text-5xl xl:text-6xl' />
+            <h1 className="text-3xl md:text-4xl py-2 flex gap-2 sm:items-center font-light text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+              <div className='w-fit'>
+                <PiGearLight className='text-4xl md:text-5xl' />
+              </div>
               <span>SAP Services Portfolio</span>
             </h1>
           </div>
           <div className={`${unbounded.className}  gap-6 lg:gap-12 mt-4`}>
             <div className=' flex flex-col gap-4 md:gap-8'>
-
               <p className='text-[#043e96] md:text-lg xl:text-xl md:tracking-wider font-light'>
                 FINNSAP is a SAP focused organisation, offering wide range of services to our clients with prime
                 emphasis on industry verticals like Utilities, Oil & Gas and Public Sector.

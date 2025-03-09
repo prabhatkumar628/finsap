@@ -6,15 +6,11 @@ export default function OurGuiding() {
         <>
             <div className="w-full md:p-14 bg-white flex justify-center items-center relative">
                 <div className="w-full h-full md:min-h-[600px] xl:min-h-[80vh] flex-1 border-2 border-[#8ea8d0] hidden md:block"></div>
-
                 <div className=" static md:absolute w-full mx-auto h-auto left-0 md:top-[50%] md:translate-y-[-50%]">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-7xl tracking-wider text-[#043e96] py-4 md:pt-0 md:pb-8 mb-4 md:mb-10 text-center relative after:absolute after:content-[''] after:w-[80px] after:h-[2px] after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:bg-[#0ed4ff]">
                         Our Guiding Principles
                     </h2>
-
-                    {/* ✅ Top Row */}
-                    <div className="flex flex-wrap justify-center items-center lg:gap-0 bg-gradient-to-t to-[#043e96] from-[#0089ab] min-w-full">
-                        {/* Accountability */}
+                    <div className="flex flex-wrap justify-center items-center lg:gap-0 lg:px-6 xl:px-10 bg-gradient-to-t to-[#043e96] from-[#0089ab] min-w-full">
                         <div
                             className="guid-line-item-one w-full sm:w-[80%] md:w-[35%] md:mr-[-3.5%] py-5 md:py-0 md:h-48 bg-[#3eddff] flex justify-center items-center relative"
                         >
@@ -25,8 +21,6 @@ export default function OurGuiding() {
                                 </p>
                             </div>
                         </div>
-
-                        {/* Professionalism */}
                         <div
                             className="guid-line-item-one w-full sm:w-[80%] md:w-[35%] py-5 md:py-0 md:h-48 bg-[#7ae7ff] flex justify-center items-center relative"
                         >
@@ -37,8 +31,6 @@ export default function OurGuiding() {
                                 </p>
                             </div>
                         </div>
-
-                        {/* Customer Focus */}
                         <div
                             className="guid-line-item-one w-full sm:w-[80%] md:w-[35%] md:ml-[-3.5%] py-5 md:py-0 md:h-48 bg-[#3eddff] flex justify-center items-center relative"
                         >
@@ -52,7 +44,7 @@ export default function OurGuiding() {
                     </div>
 
                     {/* ✅ Bottom Row */}
-                    <div className="flex flex-wrap justify-center items-center lg:gap-0 bg-gradient-to-b to-[#043e96] from-[#0089ab]">
+                    <div className="flex flex-wrap justify-center items-center lg:gap-0 lg:px-6 xl:px-10 bg-gradient-to-b to-[#043e96] from-[#0089ab]">
                         {/* Integrity */}
                         <div
                             className="guid-line-item-two w-full sm:w-[80%] md:w-[35%] md:mr-[-1.75%] py-5 md:py-0 md:h-48 bg-[#7ae7ff] md:bg-[#3eddff] flex justify-center items-center relative"

@@ -49,10 +49,10 @@ export default function Header() {
                     </div>
                     <ul className={`flex flex-col md:flex-row md:m-auto md:w-fit gap-4 md:gap-0 lg:gap-4 lg:text-lg font-semibold px-5 md:px-0`}>
                         <li className={`${raleway.className} flex`}>
-                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/"}>Home</Link>
+                            <Link className={`${pathname === "/"?"font-semibold !text-[#0ed4ff]":""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full`} href={"/"}>Home</Link>
                         </li>
                         <li className={`${raleway.className} flex flex-col`}>
-                            <div onClick={() => setServices(pre => !pre)} className={`${services ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] cursor-pointer hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 flex items-center lg:gap-1 w-full`}>
+                            <div onClick={() => setServices(pre => !pre)} className={`${services ? "font-semibold !text-[#0ed4ff]" : ""} ${pathname.startsWith("/services")?"font-semibold !text-[#0ed4ff]":""} text-[#043e96] cursor-pointer hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 flex items-center lg:gap-1 w-full`}>
                                 <span>Services</span>
                                 <IoChevronDownSharp className="hidden md:block" />
                             </div>
@@ -111,20 +111,29 @@ export default function Header() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-span-12 md:col-span-4 lg:col-span-6 hidden text-center border-2 md:grid place-items-center text-5xl">
-                                    I Need Content for write Here
+                                <div className="col-span-12 md:col-span-4 lg:col-span-6 hidden text-center md:grid place-items-center text-5xl">
+                                    <div className="relative w-full h-[260px] overflow-hidden grid place-items-center">
+                                        <Image
+                                            className="object-cover rounded-4xl overflow-hidden"
+                                            src="/Layout/popbanner.jpg"
+                                            alt="Oil & Gas Industry"
+                                            fill  // ✅ `fill` use karo for full width & height
+                                            priority
+                                        />
+                                    </div>
                                 </div>
+
                             </div>
                         </li>
 
                         <li className={`${raleway.className} flex`}>
-                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/industries/SAP-Oil-And-Gas-Consulting"}>Industries</Link>
+                            <Link className={`${pathname.startsWith("/industries")?"font-semibold !text-[#0ed4ff]":""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full`} href={"/industries/SAP-Oil-And-Gas-Consulting"}>Industries</Link>
                         </li>
                         <li className={`${raleway.className} flex`}>
-                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/about"}>About Us</Link>
+                            <Link className={`${pathname.startsWith("/about")?"font-semibold !text-[#0ed4ff]":""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full`} href={"/about"}>About Us</Link>
                         </li>
                         <li className={`${raleway.className} flex`}>
-                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/contact"}>Contact Us</Link>
+                            <Link className={`${pathname.startsWith("/contact")?"font-semibold !text-[#0ed4ff]":""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full`} href={"/contact"}>Contact Us</Link>
                         </li>
                     </ul>
                 </div>

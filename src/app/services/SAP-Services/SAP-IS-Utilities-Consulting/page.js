@@ -14,8 +14,10 @@ export default function SapIsUtilities() {
             </div>
             <div className="w-full h-full px-4 py-6  md:p-6 lg:px-12 md:pb-12 flex-1 border-2 border-[#8ea8d0]">
                 <div className={`${unbounded.className} flex flex-col gap-6`}>
-                    <h1 className="text-3xl md:text-4xl xl:text-5xl py-2 flex sm:items-center gap-2 font-light text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
-                        <PiUsersThree className='text-4xl md:text-5xl xl:text-6xl' />
+                    <h1 className="text-3xl md:text-4xl py-2 flex sm:items-center gap-2 font-light text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+                        <div className='w-fit'>
+                            <PiUsersThree className='text-4xl md:text-5xl' />
+                        </div>
                         <span> SAP IS-Utilities Consulting</span>
                     </h1>
                     <p className='text-[#043e96] md:text-lg font-light'>
@@ -29,7 +31,7 @@ export default function SapIsUtilities() {
                     <h2 className="text-xl py-2 flex gap-2 items-center text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
                         Our Expertise:
                     </h2>
-                    <div className='grid grid-cols-12 pt-4 md:pt-6 gap-10'>
+                    <div className='grid grid-cols-12 pt-4 md:pt-6 gap-4 sm:gap-6 md:gap-10'>
                         <div className='col-span-12 xl:col-span-5 order-2 xl:order-1 grid place-items-center '>
                             <div className='max-w-[650px] flex flex-col gap-4 md:gap-5'>
                                 <p className='text-[#043e96] text-sm md:text-base font-light'>
