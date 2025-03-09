@@ -23,19 +23,19 @@ export default function AboutUs() {
                             <span className={`font-extralight`}> Empowering Businesses
                                 <br />with SAP Expertise</span>
                         </h2>
-                        <p className='text-[#043e96] text-xl sm:tracking-widest font-light'>
+                        <p className='text-[#043e96] md:text-lg xl:text-xl md:tracking-wider font-light'>
                             As a growing IT consulting firm, Finnsap specializes in
                             delivering high-impact SAP solutions. We guide businesses
                             and government entities worldwide in leveraging top-tier ERP
                             systems and intelligence tools from SAP.
                         </p>
-                        <p className='text-[#043e96] text-xl sm:tracking-widest font-light'>
+                        <p className='text-[#043e96] md:text-lg xl:text-xl md:tracking-widest font-light'>
                             Finnsap boasts deep industry expertise, particularly within the
                             Utilities and Public Sector. We forge strategic partnerships,
                             delivering tailored solutions that address unique business
                             challenges.
                         </p>
-                        <p className='text-[#043e96] text-xl sm:tracking-widest font-light'>
+                        <p className='text-[#043e96] md:text-lg xl:text-xl md:tracking-widest font-light'>
                             Headquartered in India, we serve clients globally. Our team of
                             experienced consultants, encompassing technical and
                             functional SAP specialists, ensures successful project delivery

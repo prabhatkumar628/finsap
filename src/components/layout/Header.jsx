@@ -118,7 +118,7 @@ export default function Header() {
                         </li>
 
                         <li className={`${raleway.className} flex`}>
-                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/"}>Industries</Link>
+                            <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/industries/SAP-Oil-And-Gas-Consulting"}>Industries</Link>
                         </li>
                         <li className={`${raleway.className} flex`}>
                             <Link className="text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full" href={"/about"}>About Us</Link>
