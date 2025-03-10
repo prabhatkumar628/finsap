@@ -69,13 +69,11 @@ export default function Header() {
         };
     }, []);
 
-
-
     return (
         <header style={{ boxShadow: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em" }}
             className={`${navFixed ? "fixed top-0 left-0" : "static"} w-full p-3 px-4 sm:min-h-[80px] sm:px-10 md:px-16 lg:px-24 bg-white !shadow-md z-50 grid place-items-center`}>
             <nav className="flex items-center justify-between relative w-full">
-                <div className="relative w-32 sm:w-40 lg:w-44 xl:w-48 h-auto">
+                <Link href={"/"} className="relative w-32 sm:w-40 lg:w-44 xl:w-48 h-auto">
                     <Image
                         src="/Layout/logo.png"
                         alt="finnsap_logo"
@@ -85,7 +83,7 @@ export default function Header() {
                         className="w-full h-auto"
                         priority
                     />
-                </div>
+                </Link>
                 <div style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px" }}
                     className={`fixed top-0 right-0 h-screen w-[300px] mr-[-350px] md:mr-0 ${menu ? "!mr-0" : ""} md:static md:w-full md:h-auto bg-white md:!shadow-none md:bg-transparent transition-all duration-300 ease-in-out z-50`}>
                     <div className="p-3 px-4 sm:px-10 grid place-items-end md:hidden">
