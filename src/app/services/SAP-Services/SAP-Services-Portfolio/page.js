@@ -63,3 +63,56 @@ export default function SapServicesPortfolio() {
     </>
   )
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "SAP Services Portfolio - Comprehensive SAP Solutions by Finnsap",
+    description:
+      "Explore Finnsap's SAP Services Portfolio, including SAP consulting, implementation, migration, integration, and support for businesses of all sizes.",
+    keywords: [
+      "SAP Services Portfolio",
+      "SAP Consulting Services",
+      "SAP Implementation",
+      "SAP Migration Services",
+      "SAP Integration Solutions",
+      "SAP Support Services",
+      "SAP Business One",
+      "SAP S/4HANA Solutions",
+      "Enterprise SAP Solutions",
+      "SAP Custom Development",
+      "SAP Digital Transformation",
+      "Cloud ERP Services",
+      "SAP Managed Services",
+      "SAP Performance Optimization",
+      "SAP Strategy Consulting",
+    ],
+    openGraph: {
+      title: "SAP Services Portfolio - End-to-End SAP Solutions",
+      description:
+        "Discover Finnsap's SAP services, from consulting and implementation to migration and support. Tailored SAP solutions for business success.",
+      url: "https://www.finnsap.com/services/SAP-Services/SAP-Services-Portfolio",
+      siteName: "Finnsap",
+      images: [
+        {
+          url: "https://www.finnsap.com/og.png",
+          width: 1200,
+          height: 630,
+          alt: "SAP Services Portfolio - Finnsap",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "SAP Services Portfolio - Comprehensive SAP Solutions",
+      description:
+        "Explore Finnsap’s SAP services, including consulting, implementation, and support. Tailored SAP solutions for enterprises.",
+      images: ["https://www.finnsap.com/og.png"],
+    },
+    robots: "index, follow",
+    alternates: {
+      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-Services-Portfolio",
+    },
+  };
+};
+

@@ -79,3 +79,55 @@ export default function Page() {
         </div>
     )
 }
+
+export const generateMetadata = () => {
+    return {
+      title: "SAP Oil & Gas Consulting - Expert SAP Solutions for Energy Sector",
+      description:
+        "Finnsap provides specialized SAP consulting for the oil & gas industry. Optimize operations with tailored SAP solutions, ERP integration, and digital transformation.",
+      keywords: [
+        "SAP Oil & Gas Consulting",
+        "SAP for Energy Sector",
+        "Oil & Gas ERP Solutions",
+        "SAP S/4HANA for Oil & Gas",
+        "SAP Upstream Solutions",
+        "SAP Midstream Solutions",
+        "SAP Downstream Solutions",
+        "Energy Industry SAP Solutions",
+        "Oil & Gas Digital Transformation",
+        "SAP Asset Management",
+        "SAP Supply Chain for Oil & Gas",
+        "SAP HANA for Energy Industry",
+        "SAP Business One for Oil & Gas",
+        "Enterprise Resource Planning for Oil & Gas",
+        "IT Consulting for Oil & Gas Industry",
+      ],
+      openGraph: {
+        title: "SAP Oil & Gas Consulting - Optimize Your Energy Business",
+        description:
+          "Get expert SAP solutions for the oil & gas industry with Finnsap. From SAP S/4HANA to ERP integration, we help energy businesses streamline operations.",
+        url: "https://www.finnsap.com/industries/SAP-Oil-And-Gas-Consulting",
+        siteName: "Finnsap",
+        images: [
+          {
+            url: "https://www.finnsap.com/og.png",
+            width: 1200,
+            height: 630,
+            alt: "SAP Oil & Gas Consulting - Finnsap",
+          },
+        ],
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "SAP Oil & Gas Consulting - Expert SAP Solutions",
+        description:
+          "Finnsap offers top-tier SAP consulting for the oil & gas industry. Optimize operations, enhance efficiency, and drive digital transformation.",
+        images: ["https://www.finnsap.com/og.png"],
+      },
+      robots: "index, follow",
+      alternates: {
+        canonical: "https://www.finnsap.com/industries/SAP-Oil-And-Gas-Consulting",
+      },
+    };
+  };

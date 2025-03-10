@@ -24,11 +24,8 @@ export default function Header() {
         setServices(false)
     }, [pathname])
     return (
-
-
         <header style={{ boxShadow: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em" }} className={`p-2 px-4 sm:px-10 md:px-16 lg:px-24 bg-white !shadow-md z-50`}>
             <nav className="flex items-center justify-between relative">
-                {/* Responsive Image Container */}
                 <div className="relative w-32 sm:w-40 lg:w-44 xl:w-48 h-auto">
                     <Image
                         src="/Layout/logo.png"
@@ -117,12 +114,11 @@ export default function Header() {
                                             className="object-cover rounded-4xl overflow-hidden"
                                             src="/Layout/popbanner.jpg"
                                             alt="Oil & Gas Industry"
-                                            fill  // ✅ `fill` use karo for full width & height
+                                            fill  
                                             priority
                                         />
                                     </div>
                                 </div>
-
                             </div>
                         </li>
 

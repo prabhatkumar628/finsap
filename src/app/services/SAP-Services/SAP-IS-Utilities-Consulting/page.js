@@ -80,3 +80,56 @@ export default function SapIsUtilities() {
         </div>
     )
 }
+
+export const generateMetadata = () => {
+    return {
+      title: "SAP IS-Utilities Consulting - Expert SAP Solutions for Utility Industry",
+      description:
+        "Finnsap provides specialized SAP IS-Utilities consulting for energy, water, and waste management industries. Optimize utility operations with SAP solutions.",
+      keywords: [
+        "SAP IS-Utilities Consulting",
+        "SAP for Utilities Industry",
+        "SAP Utilities Solutions",
+        "SAP Energy Management",
+        "SAP Water Utilities",
+        "SAP Waste Management",
+        "SAP S/4HANA for Utilities",
+        "SAP Customer Service Utilities",
+        "SAP Billing & Revenue Management",
+        "SAP Smart Metering Solutions",
+        "SAP Digital Transformation for Utilities",
+        "SAP Asset Management for Utilities",
+        "SAP ERP for Utilities",
+        "SAP Integration for Energy Sector",
+        "Utility Industry IT Solutions",
+      ],
+      openGraph: {
+        title: "SAP IS-Utilities Consulting - Optimize Utility Operations",
+        description:
+          "Get expert SAP IS-Utilities solutions with Finnsap. Enhance efficiency in energy, water, and waste management industries through SAP consulting.",
+        url: "https://www.finnsap.com/services/SAP-Services/SAP-IS-Utilities-Consulting",
+        siteName: "Finnsap",
+        images: [
+          {
+            url: "https://www.finnsap.com/og.png",
+            width: 1200,
+            height: 630,
+            alt: "SAP IS-Utilities Consulting - Finnsap",
+          },
+        ],
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "SAP IS-Utilities Consulting - Transform Utility Operations",
+        description:
+          "Finnsap offers top-tier SAP IS-Utilities consulting services. Optimize your energy, water, and waste management business with SAP solutions.",
+        images: ["https://www.finnsap.com/og.png"],
+      },
+      robots: "index, follow",
+      alternates: {
+        canonical: "https://www.finnsap.com/services/SAP-Services/SAP-IS-Utilities-Consulting",
+      },
+    };
+  };
+  

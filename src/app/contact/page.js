@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-// Multiple font weights
 import { Unbounded } from "next/font/google";
 import Link from "next/link";
 const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', '500', '600'] });
@@ -52,3 +50,55 @@ export default function ContactUs() {
         </main>
     );
 }
+
+export const generateMetadata = () => {
+    return {
+      title: "Contact Finnsap - Get in Touch for SAP Solutions & Consulting",
+      description:
+        "Reach out to Finnsap for expert SAP consulting, ERP solutions, and web & mobile app development. Let's optimize your business together.",
+      keywords: [
+        "Contact Finnsap",
+        "SAP Consulting Contact",
+        "SAP Solutions Inquiry",
+        "ERP Solutions Contact",
+        "Business Software Support",
+        "Enterprise Resource Planning Help",
+        "Cloud ERP Consultation",
+        "SAP Business One Support",
+        "SAP S/4HANA Contact",
+        "SAP Migration Assistance",
+        "SAP Custom Development Inquiry",
+        "SAP Integration Services Help",
+        "SAP Fiori Consultation",
+        "IT Consulting Services Contact",
+        "Digital Transformation Support",
+      ],
+      openGraph: {
+        title: "Contact Finnsap - Leading SAP Consulting & ERP Solutions",
+        description:
+          "Need expert SAP consulting? Contact Finnsap today for tailored SAP solutions, ERP support, and IT consulting services.",
+        url: "https://www.finnsap.com/contact",
+        siteName: "Finnsap",
+        images: [
+          {
+            url: "https://www.finnsap.com/og.png",
+            width: 1200,
+            height: 630,
+            alt: "Finnsap Contact - SAP Consulting & ERP Solutions",
+          },
+        ],
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Contact Finnsap - Expert SAP Services & Consulting",
+        description:
+          "Get in touch with Finnsap for world-class SAP solutions, ERP consulting, and business transformation services.",
+        images: ["https://www.finnsap.com/og.png"],
+      },
+      robots: "index, follow",
+      alternates: {
+        canonical: "https://www.finnsap.com/contact",
+      },
+    };
+  };

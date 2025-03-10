@@ -2,8 +2,6 @@ import React from 'react'
 import { Unbounded } from 'next/font/google'
 const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
 
-
-
 export default function WhyUs() {
     const whyUsData = [
         { heading: "Experienced & Professional Consultants", description: "At FINNSAP, we engage only with highly skilled and experienced consultants who have a proven track record of success. This ensures that our clients receive expert guidance and insights based on years of demonstrated expertise and successful outcomes." },
@@ -24,20 +22,15 @@ export default function WhyUs() {
                     {
                         whyUsData.map((item, index) => (
                             <div key={index} className='col-span-12 md:col-span-6 flex flex-col gap-4'>
-                                <h2 className="text-xl font-bold py-2 text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+                                <h3 className="text-xl font-bold py-2 text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
                                     {item.heading}
-                                </h2>
+                                </h3>
                                 <p className='text-[#043e96] font-light'>
                                     {item.description}
                                 </p>
                             </div>
                         ))
                     }
-
-
-
-
-
                 </div>
             </div>
         </div>

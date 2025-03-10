@@ -7,7 +7,7 @@ export default function GlobalReach() {
     return (
         <div className='bg-white p-5 sm:p-10 md:pt-20 relative'>
             <div className='w-full h-full hidden md:flex absolute top-0 left-0 bg-[rgba(0,0,0,0)] flex-col items-end gap-6'>
-                <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 10% 100%)" }} className='min-h-16 w-[35%] bg-[#0dd4ff]'></div>
+                {/* <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 10% 100%)" }} className='min-h-16 w-[35%] bg-[#0dd4ff]'></div> */}
                 {/* <div style={{ clipPath: "polygon(80% 0, 100% 0, 100% 100%, 65% 100%)" }} className='h-full bg-amber-700 w-full overflow-hidden'></div> */}
 
                 <div style={{ clipPath: "polygon(0 0, 90% 0, 100% 100%, 0 100%)" }} className='min-h-10 w-[20%] bg-[#0dd4ff] absolute bottom-0 left-0'></div>

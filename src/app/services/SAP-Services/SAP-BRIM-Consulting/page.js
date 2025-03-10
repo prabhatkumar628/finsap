@@ -84,3 +84,55 @@ export default function SapBrim() {
     </div>
   )
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "SAP BRIM Consulting - Expert Billing & Revenue Innovation Management Services",
+    description:
+      "Finnsap provides specialized SAP BRIM consulting services, helping businesses optimize subscription billing, revenue management, and monetization strategies.",
+    keywords: [
+      "SAP BRIM Consulting",
+      "SAP Billing and Revenue Innovation Management",
+      "SAP Subscription Billing",
+      "SAP Revenue Management",
+      "SAP Convergent Charging",
+      "SAP Convergent Mediation",
+      "SAP Contract Accounting",
+      "SAP BRIM Implementation",
+      "SAP BRIM Migration",
+      "SAP Monetization Solutions",
+      "SAP Digital Business Models",
+      "SAP Cloud Billing",
+      "SAP S/4HANA BRIM",
+      "SAP BRIM Support Services",
+      "SAP BRIM Integration",
+    ],
+    openGraph: {
+      title: "SAP BRIM Consulting - Optimize Your Billing & Revenue Management",
+      description:
+        "Finnsap offers SAP BRIM consulting services, ensuring efficient billing, revenue management, and subscription monetization for modern businesses.",
+      url: "https://www.finnsap.com/services/SAP-Services/SAP-BRIM-Consulting",
+      siteName: "Finnsap",
+      images: [
+        {
+          url: "https://www.finnsap.com/og.png",
+          width: 1200,
+          height: 630,
+          alt: "SAP BRIM Consulting - Finnsap",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "SAP BRIM Consulting - Transform Your Billing & Revenue Management",
+      description:
+        "Unlock the full potential of SAP BRIM with Finnsap's expert consulting services. Enhance billing, revenue management, and subscription solutions.",
+      images: ["https://www.finnsap.com/og.png"],
+    },
+    robots: "index, follow",
+    alternates: {
+      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-BRIM-Consulting",
+    },
+  };
+};

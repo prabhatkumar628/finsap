@@ -87,3 +87,55 @@ export default function SapEprConsulting() {
     </div>
   )
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "SAP ERP Consulting - Expert SAP ERP Solutions by Finnsap",
+    description:
+      "Finnsap provides expert SAP ERP consulting services, including implementation, integration, and support to optimize business processes and drive efficiency.",
+    keywords: [
+      "SAP ERP Consulting",
+      "SAP ERP Solutions",
+      "SAP Business One",
+      "SAP S/4HANA Consulting",
+      "SAP ERP Implementation",
+      "SAP ERP Migration",
+      "SAP ERP Integration",
+      "Enterprise Resource Planning",
+      "SAP ERP Customization",
+      "SAP ERP Support Services",
+      "Cloud ERP Solutions",
+      "SAP Digital Transformation",
+      "SAP Financial Management",
+      "SAP Supply Chain Management",
+      "SAP Manufacturing Solutions",
+    ],
+    openGraph: {
+      title: "SAP ERP Consulting - Comprehensive SAP ERP Solutions",
+      description:
+        "Optimize your business operations with Finnsap’s SAP ERP consulting services. We provide expert implementation, migration, and support for SAP ERP systems.",
+      url: "https://www.finnsap.com/services/SAP-Services/SAP-EPR-Consulting",
+      siteName: "Finnsap",
+      images: [
+        {
+          url: "https://www.finnsap.com/og.png",
+          width: 1200,
+          height: 630,
+          alt: "SAP ERP Consulting - Finnsap",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "SAP ERP Consulting - Optimize Your Business with SAP",
+      description:
+        "Finnsap offers expert SAP ERP consulting services to help businesses streamline operations, improve efficiency, and drive digital transformation.",
+      images: ["https://www.finnsap.com/og.png"],
+    },
+    robots: "index, follow",
+    alternates: {
+      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-EPR-Consulting",
+    },
+  };
+};

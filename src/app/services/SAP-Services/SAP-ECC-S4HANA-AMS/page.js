@@ -84,3 +84,55 @@ export default function SapEccAms() {
     </div>
   )
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "SAP ECC & S/4HANA AMS - Application Management Services by Finnsap",
+    description:
+      "Finnsap provides expert SAP ECC & S/4HANA Application Management Services (AMS), ensuring seamless operations, system optimization, and business continuity.",
+    keywords: [
+      "SAP ECC AMS",
+      "SAP S/4HANA AMS",
+      "SAP Application Management Services",
+      "SAP ECC Support",
+      "SAP S/4HANA Support",
+      "SAP AMS Consulting",
+      "SAP Managed Services",
+      "SAP System Optimization",
+      "SAP Technical Support",
+      "SAP Functional Support",
+      "SAP Business Continuity",
+      "SAP IT Support Services",
+      "SAP ECC to S/4HANA Migration",
+      "SAP Cloud AMS",
+      "SAP ERP Maintenance",
+    ],
+    openGraph: {
+      title: "SAP ECC & S/4HANA AMS - Expert SAP Application Management Services",
+      description:
+        "Ensure smooth SAP ECC & S/4HANA operations with Finnsap's AMS solutions. We offer expert support, maintenance, and optimization for your SAP systems.",
+      url: "https://www.finnsap.com/services/SAP-Services/SAP-ECC-S4HANA-AMS",
+      siteName: "Finnsap",
+      images: [
+        {
+          url: "https://www.finnsap.com/og.png",
+          width: 1200,
+          height: 630,
+          alt: "SAP ECC & S/4HANA AMS - Finnsap",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "SAP ECC & S/4HANA AMS - SAP Application Management Services",
+      description:
+        "Finnsap provides end-to-end SAP AMS solutions, ensuring optimal performance and continuous improvement for SAP ECC & S/4HANA systems.",
+      images: ["https://www.finnsap.com/og.png"],
+    },
+    robots: "index, follow",
+    alternates: {
+      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-ECC-S4HANA-AMS",
+    },
+  };
+};

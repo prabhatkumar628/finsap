@@ -84,3 +84,55 @@ export default function SapAmiConsulting() {
     </div>
   )
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "SAP AMI Consulting - Advanced Metering Infrastructure Solutions",
+    description:
+      "Finnsap provides expert SAP AMI consulting services, enabling smart metering, real-time data analytics, and seamless utility management for businesses.",
+    keywords: [
+      "SAP AMI Consulting",
+      "Advanced Metering Infrastructure",
+      "SAP Smart Metering",
+      "SAP Utilities Solutions",
+      "SAP AMI Implementation",
+      "SAP AMI Integration",
+      "SAP Smart Grid Solutions",
+      "SAP Energy Data Management",
+      "SAP Utility Billing",
+      "Real-Time Meter Data Management",
+      "SAP AMI Deployment",
+      "SAP Digital Utilities",
+      "SAP IS-U",
+      "SAP IoT in Utilities",
+      "SAP Meter Data Analytics",
+    ],
+    openGraph: {
+      title: "SAP AMI Consulting - Smart Metering & Utility Management",
+      description:
+        "Optimize your utility management with SAP AMI consulting by Finnsap. We provide smart metering, real-time data processing, and grid optimization solutions.",
+      url: "https://www.finnsap.com/services/SAP-Services/SAP-AMI-Consulting",
+      siteName: "Finnsap",
+      images: [
+        {
+          url: "https://www.finnsap.com/og.png",
+          width: 1200,
+          height: 630,
+          alt: "SAP AMI Consulting - Finnsap",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "SAP AMI Consulting - Smart Utility & Metering Solutions",
+      description:
+        "Transform utility operations with SAP AMI consulting by Finnsap. Get smart metering, real-time data insights, and seamless integration solutions.",
+      images: ["https://www.finnsap.com/og.png"],
+    },
+    robots: "index, follow",
+    alternates: {
+      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-AMI-Consulting",
+    },
+  };
+};
