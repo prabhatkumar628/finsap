@@ -6,7 +6,7 @@ const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', '500', '600'] 
 export default function ContactUs() {
     return (
         <main>
-            <div className="w-full h-[calc(100vh-61px)] bg-green-500 xl:h-[calc(100vh-70px)] overflow-hidden relative z-40">
+            <div className="w-full h-[calc(100vh-69px)] bg-white xl:h-[calc(100vh-70px)] overflow-hidden relative z-40">
                 <div className="absolute inset-0 w-full h-full">
                     <Image
                         className="w-full h-[calc(100vh-61px)] object-cover transform scale-x-[-1]" // Flip horizontally
