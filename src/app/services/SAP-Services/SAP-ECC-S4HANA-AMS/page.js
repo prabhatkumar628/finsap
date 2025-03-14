@@ -1,8 +1,8 @@
 import React from 'react'
 import { GiGears } from "react-icons/gi";
-import { Unbounded } from 'next/font/google';
 import Image from 'next/image';
-const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
+import { Poppins } from 'next/font/google';
+const unbounded = Poppins({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
 
 export default function SapEccAms() {
   return (
@@ -14,41 +14,41 @@ export default function SapEccAms() {
       </div>
       <div className="w-full h-full px-4 py-6 md:p-6 lg:px-12 md:pb-12 flex-1 border-2 border-[#8ea8d0]">
         <div className={`${unbounded.className} flex flex-col gap-6`}>
-          <h1 className="text-3xl md:text-4xl py-2 flex sm:items-center gap-2 font-light text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+          <h1 className="text-3xl md:text-4xl py-2 flex sm:items-center gap-2 text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
             <div className='w-fit'>
               <GiGears className='text-4xl md:text-5xl transform scale-x-[-1]' />
             </div>
             <span> SAP ECC AMS (Application Management Services)</span>
           </h1>
-          <p className='text-[#043e96] md:text-lg font-light'>
+          <p className='text-[#043e96] text-lg md:text-xl font-light'>
             <span className='font-semibold'>Overview: </span>
             SAP ECC (Enterprise Central Component) is a core part of your business operations, and our Application Management
             Services ensure it runs smoothly with maximum efficiency.
           </p>
         </div>
         <div className={`${unbounded.className} gap-6 lg:gap-12 mt-4`}>
-          <h2 className="text-base py-2 flex gap-2 items-center text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+          <h2 className="text-lg py-2 flex gap-2 items-center text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
             Our Expertise:
           </h2>
           <div className='grid grid-cols-12 pt-4 md:pt-6 gap-4 sm:gap-6 md:gap-10'>
             <div className='col-span-12 xl:col-span-5 order-2 xl:order-1 grid place-items-center '>
               <div className='max-w-[600px] flex flex-col gap-4 '>
-                <p className='text-[#043e96] text-sm font-light'>
+                <p className='text-[#043e96] font-light'>
                   <span className='font-semibold'>1: 24/7 Support: </span>
                   Continuous monitoring and support for SAP
                   ECC to ensure business continuity.
                 </p>
-                <p className='text-[#043e96] text-sm font-light'>
+                <p className='text-[#043e96] font-light'>
                   <span className='font-semibold'>2: Performance Optimization: </span>
                   Regular system health checks
                   and performance enhancements to optimize efficiency.
                 </p>
-                <p className='text-[#043e96] text-sm font-light'>
+                <p className='text-[#043e96] font-light'>
                   <span className='font-semibold'>3: Incident & Problem Management: </span>
                   Rapid resolution of any
                   technical issues with minimal downtime.
                 </p>
-                <p className='text-[#043e96] text-sm font-light'>
+                <p className='text-[#043e96] font-light'>
                   <span className='font-semibold'>4: Upgrades & Patches: </span>
                   Keeping your SAP ECC system
                   updated and aligned with the latest SAP features and security

@@ -8,9 +8,8 @@ import { IoChevronDownSharp } from "react-icons/io5";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import "./layout.css"
-
-import { Raleway } from 'next/font/google'
 import { usePathname } from "next/navigation";
+import { Raleway } from 'next/font/google'
 export const raleway = Raleway({ subsets: ['latin'], weight: ['500'] })
 
 export default function Header() {
@@ -100,11 +99,11 @@ export default function Header() {
                                 <span>Services</span>
                                 <IoChevronDownSharp className="hidden md:block" />
                             </div>
-                            <div ref={servicesRef} className={`services w-full ${services ? "md:max-h-[300px]" : "md:!shadow-none md:!py-0"} transition-all duration-300 ease-in-out md:max-h-0 md:overflow-hidden md:absolute top-[120%] left-0 rounded-md bg-white grid grid-cols-12 p-2 md:p-4 xl:px-10 xl:py-6 gap-2 z-50`}>
+                            <div ref={servicesRef} className={`services w-full ${services ? "md:max-h-[300px]" : "md:!shadow-none md:!py-0"} transition-all duration-300 ease-in-out md:max-h-0 md:overflow-hidden md:absolute top-[130%] left-0 rounded-md bg-white grid grid-cols-12 p-2 md:p-4 xl:px-10 xl:py-6 gap-2 z-50`}>
                                 <div className="col-span-12 md:col-span-4 lg:col-span-3">
                                     <div
                                         onClick={() => setSapServices(prev => !prev)}
-                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#043e96] hover:text-[#0ed4ff] transition"
+                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#043e96] transition"
                                     >
                                         <span>SAP Services</span>
                                         <IoChevronDownSharp className={`md:hidden transition-transform duration-300 ${sapServices ? "rotate-180" : ""}`} />
@@ -134,24 +133,24 @@ export default function Header() {
                                 <div className="col-span-12 md:col-span-4 lg:col-span-3">
                                     <div
                                         onClick={() => setAppServices(prev => !prev)}
-                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#043e96] hover:text-[#0ed4ff] transition"
+                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#043e96] transition"
                                     >
-                                        <span>Web & App Services</span>
+                                        <span>Web Services</span>
                                         <IoChevronDownSharp className={`md:hidden transition-transform duration-300 ${appServices ? "rotate-180" : ""}`} />
                                     </div>
 
                                     <ul className={`overflow-hidden transition-all duration-300 ease-in-out ${appServices ? "max-h-[200px] opacity-100 pt-2" : "max-h-0 opacity-0"} md:pt-2 md:max-h-none md:opacity-100`}>
                                         <li className="flex">
-                                            <Link className={`${pathname == "/services/Web-and-App-Services/Web-Development" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-and-App-Services/Web-Development"}>Web Debelopment</Link>
+                                            <Link className={`${pathname == "/services/Web-Services/Web-Development" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-Services/Web-Development"}>Web Development</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className={`${pathname == "/services/Web-and-App-Services/Web-Support" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-and-App-Services/Web-Support"}>Web Support</Link>
+                                            <Link className={`${pathname == "/services/Web-Services/Web-Support" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-Services/Web-Support"}>Web Support</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className={`${pathname == "/services/Web-and-App-Services/Mobile-App-Development" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-and-App-Services/Mobile-App-Development"}>Mobile App Development</Link>
+                                            <Link className={`${pathname == "/services/Web-Services/Mobile-App-Development" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-Services/Mobile-App-Development"}>Mobile App Development</Link>
                                         </li>
                                         <li className="flex mt-3">
-                                            <Link className={`${pathname == "/services/Web-and-App-Services/Mobile-App-Support" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-and-App-Services/Mobile-App-Support"}>Mobile App Support</Link>
+                                            <Link className={`${pathname == "/services/Web-Services/Mobile-App-Support" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/Web-Services/Mobile-App-Support"}>Mobile App Support</Link>
                                         </li>
                                     </ul>
                                 </div>

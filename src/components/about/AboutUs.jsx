@@ -1,17 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { Unbounded } from "next/font/google";
-
-const unbounded = Unbounded({ subsets: ["latin"], weight: ["200", "300", "500", "600"] });
+import { Poppins } from 'next/font/google';
+const unbounded = Poppins({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
 
 export default function AboutUs() {
     return (
         // style={{ clipPath: "polygon(80% 0, 100% 0, 100% 100%, 65% 100%)" }}
-        <div className={`${unbounded.className} w-full p-4 md:p-14 md:pt-28 bg-white flex justify-center items-center relative`}>
+        <div className={`${unbounded.className} w-full p-4 md:p-6 lg:p-12 bg-white flex justify-center items-center relative`}>
             <div className="w-full h-full hidden md:flex absolute top-0 left-0 bg-[rgba(0,0,0,0)] flex-col items-end gap-6">
-                <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 10% 100%)" }} className="min-h-16 w-[22.5%] bg-[#043d95]"></div>
                 <div className="h-full w-full overflow-hidden grid place-items-end">
-                    <div style={{ clipPath: "polygon(50% 0, 100% 0, 100% 100%, 12% 100%)" }} className="w-[40%] h-full overflow-hidden">
+                    <div style={{ clipPath: "polygon(50% 0, 100% 0, 100% 100%, 12% 100%)" }} className="w-[45%] lg:w-[40%] h-full overflow-hidden">
                         <Image
                             src="/about/about.jpg"
                             alt="About Finnsap"
@@ -28,10 +26,9 @@ export default function AboutUs() {
                     About Us
                 </h1>
                 <div className={`${unbounded.className} grid grid-cols-12 gap-6 lg:gap-12 mt-4`}>
-                    <div className="col-span-12 md:col-span-8 flex flex-col gap-4 md:gap-10">
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl text-[#043e96] w-fit flex flex-col pt-2 gap-0">
-                            <span className="font-extralight"> Empowering Businesses
-                                <br />with SAP Expertise</span>
+                    <div className="col-span-12 md:col-span-8 flex flex-col gap-4 md:gap-6">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#043e96] w-fit flex flex-col pt-2 gap-0">
+                            Empowering Businesses<br />with SAP Expertise
                         </h2>
                         <p className="text-[#043e96] md:text-lg xl:text-xl md:tracking-wider font-light">
                             As a growing IT consulting firm, Finnsap specializes in

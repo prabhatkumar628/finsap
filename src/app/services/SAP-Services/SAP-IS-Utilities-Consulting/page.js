@@ -1,8 +1,8 @@
 import React from 'react'
 import { PiUsersThree } from "react-icons/pi";
-import { Unbounded } from 'next/font/google'
 import Image from 'next/image';
-const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
+import { Poppins } from 'next/font/google';
+const unbounded = Poppins({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
 
 export default function SapIsUtilities() {
     return (
@@ -14,13 +14,13 @@ export default function SapIsUtilities() {
             </div>
             <div className="w-full h-full px-4 py-6  md:p-6 lg:px-12 md:pb-12 flex-1 border-2 border-[#8ea8d0]">
                 <div className={`${unbounded.className} flex flex-col gap-6`}>
-                    <h1 className="text-3xl md:text-4xl py-2 flex sm:items-center gap-2 font-light text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+                    <h1 className="text-3xl md:text-4xl py-2 flex sm:items-center gap-2 text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
                         <div className='w-fit'>
                             <PiUsersThree className='text-4xl md:text-5xl' />
                         </div>
                         <span> SAP IS-Utilities Consulting</span>
                     </h1>
-                    <p className='text-[#043e96] md:text-lg font-light'>
+                    <p className='text-[#043e96] text-lg md:text-xl font-light'>
                         <span className='font-semibold'>Overview: </span>
                         SAP IS-U (Industry Solution for Utilities) is a comprehensive solution designed for utility companies, managing all aspects
                         of operations from billing to customer engagement. Our SAP IS-U consulting services help utility businesses streamline their
@@ -28,35 +28,35 @@ export default function SapIsUtilities() {
                     </p>
                 </div>
                 <div className={`${unbounded.className}  gap-6 lg:gap-12 mt-4`}>
-                    <h2 className="text-xl py-2 flex gap-2 items-center text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+                    <h2 className="text-lg py-2 flex gap-2 items-center text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] lg:after:w-[100px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
                         Our Expertise:
                     </h2>
                     <div className='grid grid-cols-12 pt-4 md:pt-6 gap-4 sm:gap-6 md:gap-10'>
                         <div className='col-span-12 xl:col-span-5 order-2 xl:order-1 grid place-items-center '>
                             <div className='max-w-[650px] flex flex-col gap-4 md:gap-5'>
-                                <p className='text-[#043e96] text-sm md:text-base font-light'>
+                                <p className='text-[#043e96] font-light'>
                                     <span className='font-semibold'>1: FICA (Finance & Contract Account Receivables and Payable): </span>
                                     SAP FICA is a powerful component within SAP IS-U that helps utility companies to manage accounts,
                                     payments, and collections with flexibility and precision.
                                 </p>
-                                <p className='text-[#043e96] text-sm md:text-base font-light'>
+                                <p className='text-[#043e96] font-light'>
                                     <span className='font-semibold'>2: Billing & Invoicing: </span>
                                     Efficient and accurate billing
                                     solutions for electricity, water, gas, and more, with easy
                                     integration into customer management.
                                 </p>
-                                <p className='text-[#043e96] text-sm md:text-base font-light'>
+                                <p className='text-[#043e96] font-light'>
                                     <span className='font-semibold'>3: Customer Engagement: </span>
                                     Enhancing customer
                                     experience through CRM functionalities integrated with
                                     SAP IS-U for personalized service and communication.
                                 </p>
-                                <p className='text-[#043e96] text-sm md:text-base font-light'>
+                                <p className='text-[#043e96] font-light'>
                                     <span className='font-semibold'>4: Device Management: </span>
                                     Manages technical data,
                                     installations, meter readings, and the inspection of devices.
                                 </p>
-                                <p className='text-[#043e96] text-sm md:text-base font-light'>
+                                <p className='text-[#043e96] font-light'>
                                     <span className='font-semibold'>5: Data Management & Analytics: </span>
                                     Empowering utility
                                     companies with actionable data insights to optimize
