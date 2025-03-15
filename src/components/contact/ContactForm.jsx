@@ -58,7 +58,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className={`${unbounded.className} max-w-lg mx-auto p-6 bg-white rounded-lg web-card-2`}>
+        <div className={`${unbounded.className} max-w-md mx-auto p-6 bg-white text-[#053d99] rounded-2xl contact-form`}>
             <h2 className="text-2xl font-semibold text-center mb-4">Contact Us</h2>
             {loading && <Loading/> }
 
@@ -72,7 +72,7 @@ const ContactForm = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 contact-form outline-none border border-white focus:border-[#0dd4ff]"
                 />
                 <input
                     type="email"
@@ -80,7 +80,7 @@ const ContactForm = () => {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 contact-form outline-none border border-white focus:border-[#0dd4ff]"
                 />
                 <input
                     type="text"
@@ -88,7 +88,7 @@ const ContactForm = () => {
                     placeholder="Subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 contact-form outline-none border border-white focus:border-[#0dd4ff]"
                 />
                 <textarea
                     name="message"
@@ -96,11 +96,11 @@ const ContactForm = () => {
                     rows="4"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 contact-form outline-none border border-white focus:border-[#0dd4ff]"
                 ></textarea>
                 <button
                     type="submit"
-                    className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+                    className="w-full bg-[#0dd4ff] text-white py-2 hover:bg-[#0dd3ffd0] transition-all duration-200 ease-linear"
                 >
                     { "Send Message"}
                 </button>

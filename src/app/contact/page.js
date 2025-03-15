@@ -11,7 +11,7 @@ export default function ContactUs() {
         <div className="w-full h-full bg-[rgba(255,255,255,0.7)]  top-0 left-0 flex flex-col justify-end items-start p-5 sm:p-8 ">
           <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 10% 100%)" }} className='min-h-10 md:min-h-16 w-[40%] md:w-[22.5%] bg-[#0dd4ff] absolute top-0 right-0'></div>
           <div style={{ clipPath: "polygon(0 0, 90% 0, 100% 100%, 0 100%)" }} className='min-h-8 md:min-h-10 w-[35%] md:w-[20%] bg-[#0dd4ff] absolute bottom-0 left-0'></div>
-          <div className="w-full h-full min-h-[80vh] md:px-10 lg:px-16 xl:px-20 grid grid-cols-12 pt-10 md:pt-0 gap-4 md:gap-6">
+          <div className="w-full h-full min-h-[80vh] md:px-10 lg:px-16 xl:px-20 grid grid-cols-12 pt-10 md:pt-0 gap-4 md:gap-0 lg:gap-6">
             <div className="col-span-12 md:col-span-6 order-2 md:order-1 flex flex-col justify-between">
               <div className="w-[55%]">
                 <Image
