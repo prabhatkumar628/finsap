@@ -5,24 +5,24 @@ const sendMail = async ({ name, subject, email, message }) => {
     console.log("MAIL_PASS:", process.env.MAIL_PASS);
 
     try {
-        const transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 587,
-            secure: false,
-            auth: {
-                user: process.env.MAIL_USER,
-                pass: process.env.MAIL_PASS
-            }
-        });
         // const transporter = nodemailer.createTransport({
         //     host: "smtp.gmail.com",
-        //     port: 465, // ✅ Secure port
-        //     secure: true, // ✅ Force SSL/TLS
+        //     port: 587,
+        //     secure: false,
         //     auth: {
         //         user: process.env.MAIL_USER,
         //         pass: process.env.MAIL_PASS
         //     }
         // });
+        const transporter = nodemailer.createTransport({
+            host: "smtp.gmail.com",
+            port: 465, // ✅ Secure port
+            secure: true, // ✅ Force SSL/TLS
+            auth: {
+                user: process.env.MAIL_USER,
+                pass: process.env.MAIL_PASS
+            }
+        });
 
         // 1st Email: Finnsap Team ko user ka message
         const mailOptions = {

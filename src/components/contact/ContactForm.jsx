@@ -58,7 +58,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className={`${unbounded.className} max-w-md mx-auto p-6 bg-white text-[#053d99] rounded-2xl contact-form`}>
+        <div className={`${unbounded.className} max-w-md mx-auto p-6 lg:p-8 bg-white text-[#053d99] rounded-2xl contact-form`}>
             <h2 className="text-2xl font-semibold text-center mb-4">Contact Us</h2>
             {loading && <Loading/> }
 

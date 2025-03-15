@@ -11,34 +11,36 @@ export default function ContactUs() {
         <div className="w-full h-full bg-[rgba(255,255,255,0.7)]  top-0 left-0 flex flex-col justify-end items-start p-5 sm:p-8 ">
           <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 10% 100%)" }} className='min-h-10 md:min-h-16 w-[40%] md:w-[22.5%] bg-[#0dd4ff] absolute top-0 right-0'></div>
           <div style={{ clipPath: "polygon(0 0, 90% 0, 100% 100%, 0 100%)" }} className='min-h-8 md:min-h-10 w-[35%] md:w-[20%] bg-[#0dd4ff] absolute bottom-0 left-0'></div>
-          <div className="w-full h-full min-h-[80vh] md:px-10 lg:px-16 xl:px-20 grid grid-cols-12 pt-10 md:pt-0 gap-4 md:gap-0 lg:gap-6">
-            <div className="col-span-12 md:col-span-6 order-2 md:order-1 flex flex-col justify-between">
-              <div className="w-[55%]">
-                <Image
-                  src="/contact/finlogo.png"
-                  width={400}
-                  height={100}
-                  alt="logo"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-              <div className="w-full h-max flex justify-end md:justify-start">
-                <div className="w-fit h-fit md:mb-10">
-                  <h1 className=" text-2xl sm:text-3xl md:text-5xl lg:text-6xl pb-3 text-[#053d99] w-fit flex flex-col justify-end items-end ms-auto md:justify-start md:items-start md:m-auto pt-2 gap-1 ">
-                    <span className={`${unbounded.className} font-light`}>Let’s</span>
-                    <span className={`${unbounded.className} font-light`}>Connect</span>
-                  </h1>
-                  <div className={`${unbounded.className} text-[#053d99] text-lg md:text-2xl font-extralight flex flex-col justify-end items-end ms-auto md:justify-start md:items-start md:m-auto gap-1 md:gap-3 pb-10`}>
-                    <Link href={"/"}> call: +91 93541 6844</Link>
-                    <Link href={"/"}>+91 91355 51695</Link>
-                    <Link href={"/"}>info@finnsa p.com</Link>
+          <div className="w-full h-full min-h-[80vh] md:px-10 lg:px-16 grid grid-cols-12 pt-10 md:pt-0 gap-4 md:gap-0 lg:gap-6">
+            <div className="col-span-12 md:col-span-6 order-2 md:order-1 grid place-items-center h-full">
+              <div className="flex flex-col md:gap-16 w-fit h-fit">
+                <div className="w-[70%]">
+                  <Image
+                    src="/contact/finlogo.png"
+                    width={400}
+                    height={100}
+                    alt="logo"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+                <div className="w-full h-max flex justify-end md:justify-start">
+                  <div className="w-fit h-fit md:mb-10">
+                    <h1 className=" text-2xl sm:text-3xl md:text-5xl lg:text-6xl pb-3 text-[#053d99] w-fit flex flex-col justify-end items-end ms-auto md:justify-start md:items-start md:m-auto pt-2 gap-1 ">
+                      <span className={`${unbounded.className} font-light`}>Let’s</span>
+                      <span className={`${unbounded.className} font-light`}>Connect</span>
+                    </h1>
+                    <div className={`${unbounded.className} text-[#053d99] text-lg md:text-2xl font-extralight flex flex-col justify-end items-end ms-auto md:justify-start md:items-start md:m-auto gap-1 md:gap-3 pb-10`}>
+                      <Link href={"/"}> call: +91 93541 6844</Link>
+                      <Link href={"/"}>+91 91355 51695</Link>
+                      <Link href={"/"}>info@finnsa p.com</Link>
+                    </div>
                   </div>
                 </div>
               </div>
 
             </div>
             <div className="col-span-12 md:col-span-6 order-1 md:order-2 grid place-items-center">
-              <ContactForm/>
+              <ContactForm />
             </div>
           </div>
         </div>
