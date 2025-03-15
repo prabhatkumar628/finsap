@@ -22,13 +22,13 @@ export default function ContactUs() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="w-full h-max">
-                <div className="w-fit h-fit">
-                  <h1 className=" text-2xl sm:text-3xl md:text-5xl lg:text-6xl pb-3 text-[#053d99] w-fit flex flex-col items-start pt-2 gap-1 ">
+              <div className="w-full h-max flex justify-end md:justify-start">
+                <div className="w-fit h-fit md:mb-10">
+                  <h1 className=" text-2xl sm:text-3xl md:text-5xl lg:text-6xl pb-3 text-[#053d99] w-fit flex flex-col justify-end items-end ms-auto md:justify-start md:items-start md:m-auto pt-2 gap-1 ">
                     <span className={`${unbounded.className} font-light`}>Let’s</span>
                     <span className={`${unbounded.className} font-light`}>Connect</span>
                   </h1>
-                  <div className={`${unbounded.className} text-[#053d99] text-lg md:text-2xl font-extralight flex flex-col justify-end items-start gap-1 md:gap-3 pb-10`}>
+                  <div className={`${unbounded.className} text-[#053d99] text-lg md:text-2xl font-extralight flex flex-col justify-end items-end ms-auto md:justify-start md:items-start md:m-auto gap-1 md:gap-3 pb-10`}>
                     <Link href={"/"}> call: +91 93541 6844</Link>
                     <Link href={"/"}>+91 91355 51695</Link>
                     <Link href={"/"}>info@finnsa p.com</Link>
