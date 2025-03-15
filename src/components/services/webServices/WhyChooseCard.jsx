@@ -12,9 +12,9 @@ export default function WhyChooseCard({ data }) {
                         Why Choose Us?
                     </p>
                 </div>
-                <div className={`${unbounded.className} grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-12`}>
+                <div className={`${unbounded.className} flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-12`}>
                     {data.map((item, index) => (
-                        <div key={index} className='flex flex-col text-center justify-center items-center py-4 px-2 sm:p-4 gap-2 sm:gap-4 text-[#043e96] rounded-2xl web-card-2'>
+                        <div key={index} className='flex flex-col max-w-[48%] lg:max-w-[350px] text-center justify-center items-center py-4 px-2 sm:p-4 gap-2 sm:gap-4 text-[#043e96] rounded-2xl web-card-2'>
                             <div className="w-[50px] min-w-[50px] h-[50px] grid place-items-center">
                                 <Image
                                     src={item.image}

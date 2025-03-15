@@ -181,12 +181,12 @@ export default function Header() {
                 </div>
                 <div className="flex items-center gap-2 text-3xl">
                     <Link href={"/"}>
-                        <div style={{ boxShadow: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em" }} className="w-[40px] h-[40px] lg:w-[45px] lg:h-[45px] rounded-sm shadow-1 text-[#043e96] grid place-items-center">
+                        <div className="icon-box w-[40px] h-[40px] lg:w-[45px] lg:h-[45px] rounded-sm shadow-1 text-[#043e96] grid place-items-center">
                             <FaLinkedin />
                         </div>
                     </Link>
                     <Link href={"/about"}>
-                        <div style={{ boxShadow: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em" }} className="w-[40px] h-[40px] lg:w-[45px] lg:h-[45px] rounded-sm shadow-1 text-[#043e96] grid place-items-center">
+                        <div className="icon-box w-[40px] h-[40px] lg:w-[45px] lg:h-[45px] rounded-sm shadow-1 text-[#043e96] grid place-items-center">
                             <FaSquareXTwitter />
                         </div>
                     </Link>

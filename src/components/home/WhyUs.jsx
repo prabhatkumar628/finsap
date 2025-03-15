@@ -1,6 +1,6 @@
 import React from 'react'
-import { Unbounded } from 'next/font/google'
-const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
+import { Poppins } from 'next/font/google';
+const unbounded = Poppins({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
 
 export default function WhyUs() {
     const whyUsData = [
@@ -11,21 +11,21 @@ export default function WhyUs() {
         { heading: "Commitment to Deliver", description: "At FINNSAP, we believe trust and commitment are the cornerstones of success. We make realistic commitments, ensuring that we only promise what we can deliver within the agreed timeframe, maintaining our reputation for reliability and avoiding the risk of overpromising and underdelivering." },
     ]
     return (
-        <div className="w-full p-4 md:p-14 bg-white flex justify-center items-center">
+        <div className="w-full p-4 md:p-6 md:pt-4 lg:pt-4 lg:p-12 bg-white flex justify-center items-center">
             <div className="w-full h-full px-4 py-6  md:p-6 lg:px-12 md:pb-12 flex-1 border-2 border-[#8ea8d0]">
                 <div className={unbounded.className}>
-                    <p className="font-light text-3xl sm:text-4xl md:text-5xl xl:text-7xl tracking-wider text-[#043e96] pb-4 md:pb-8 mb-4 md:mb-10 text-center relative after:absolute after:content-[''] after:w-[80px] after:h-[2px] after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:bg-[#0ed4ff]">
+                    <p className="font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-wider text-[#043e96] pb-4 md:pb-8 mb-4 md:mb-10 text-center relative after:absolute after:content-[''] after:w-[80px] after:h-[2px] after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:bg-[#0ed4ff]">
                         Why Us?
                     </p>
                 </div>
-                <div className={`${unbounded.className} grid grid-cols-12 gap-6 lg:gap-12`}>
+                <div className={`${unbounded.className} grid grid-cols-12 gap-6 lg:gap-8`}>
                     {
                         whyUsData.map((item, index) => (
                             <div key={index} className='col-span-12 md:col-span-6 flex flex-col gap-4'>
-                                <h3 className="text-xl font-bold py-2 text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff]">
+                                <h3 className="text-xl md:2xl font-bold py-2 text-[#043e96] relative after:absolute after:content-[''] after:w-[80px] hover:after:w-full w-fit after:h-[2px] after:bottom-0 after:left-0 after:bg-[#0ed4ff] after:transition-all after:duration-200 after:ease-linear">
                                     {item.heading}
                                 </h3>
-                                <p className='text-[#043e96] font-light'>
+                                <p className='text-[#043e96] md:text-lg font-light'>
                                     {item.description}
                                 </p>
                             </div>
