@@ -32,11 +32,13 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
             <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; height: auto;">
+                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
                   <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <h1 style=width:100%; text-align: end; min-height: 40px; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
+                  <div style="width: 100%; "background-color: #000; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;  text-align: end; vertical-align: middle;">
+                    <h1 style=""background-color: red;  text-align: end; vertical-align: middle;">Finnsap</h1>
+                  </div>
                 </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
@@ -67,11 +69,13 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
             <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; height: auto;">
+                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
                   <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <h1 style=width:100%; text-align: end; min-height: 40px; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
+                  <div style="width: 100%; "background-color: #000; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;  text-align: end; vertical-align: middle;">
+                    <h1 style=""background-color: red;  text-align: end; vertical-align: middle;">Finnsap</h1>
+                  </div>
                 </header>
 
                 <div style="padding: 20px;">
