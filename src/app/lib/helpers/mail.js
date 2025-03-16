@@ -36,9 +36,9 @@ const sendMail = async ({ name, subject, email, message }) => {
                   <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <div style="width: 100%; "background-color: #000; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;  text-align: end; vertical-align: middle;">
-                    <h1 style=""background-color: red;  text-align: end; vertical-align: middle;">Finnsap</h1>
-                  </div>
+                  <div>
+    <h1>Finnsap</h1>
+  </div>
                 </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
