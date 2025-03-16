@@ -36,13 +36,12 @@ const sendMail = async ({ name, subject, email, message }) => {
                   <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <div style="width: 100%; height: 100%; visibility: hidden;"></div>
-                  <h1 style=" min-width: fit-content; min-height: max-content; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
+                  <h1 style=width:100%; text-align: end; min-height: 40px; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
                 </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
                   <p style="font-size: 16px; color: #333;">${message}</p>
-                  <div style="margin-top: 30px; padding: 15px; background: #f9f9f9; border-left: 4px solid #4CAF50;">
+                  <div style="margin-top: 30px; padding: 15px; background: #f9f9f9; border-left: 4px solid #0dd4ff;">
                     <p style="margin: 5px 0; font-size: 14px; color: #333;">
                       <strong>Sender Name:</strong> ${name}
                     </p>
@@ -72,8 +71,7 @@ const sendMail = async ({ name, subject, email, message }) => {
                   <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <div style="width: 100%; height: 100%; visibility: hidden;"></div>
-                  <h1 style=" min-width: fit-content; min-height: max-content; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
+                  <h1 style=width:100%; text-align: end; min-height: 40px; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
                 </header>
 
                 <div style="padding: 20px;">
