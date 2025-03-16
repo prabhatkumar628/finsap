@@ -32,9 +32,11 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
             <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; text-align: center; padding: 20px;">
-                  <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 60px; height: 60px; border-radius: 50%; background: white; padding: 5px;">
-                  <h2 style="margin: 10px 0 0;">Finnsap</h2>
+                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                   <div style="width: 60px; height: 60px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
+                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
+                   </div>
+                   <h2 style="margin: 0;">Finnsap</h2>
                 </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
@@ -65,9 +67,11 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
             <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; text-align: center; padding: 20px;">
-                  <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 60px; height: 60px; border-radius: 50%; background: white; padding: 5px;">
-                  <h2 style="margin: 10px 0 0;">Finnsap</h2>
+                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                  <div style="width: 60px; height: 60px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
+                    <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
+                  </div>
+                  <h2 style="margin: 0;">Finnsap</h2>
                 </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Hello <strong>${name}</strong>,</p>
