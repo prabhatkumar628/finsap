@@ -3,12 +3,23 @@ import OurGuiding from "@/components/home/OurGuiding";
 import WhyUs from "@/components/home/WhyUs";
 
 import { Unbounded } from "next/font/google";
+import Banner from "@/components/home/Banner";
 const unbounded = Unbounded({ subsets: ['latin'], weight: ['200', '500', '600'] });
 
 export default function Home() {
   return (
     <main>
-      <div className="w-full xl:h-[calc(100vh-70px)] overflow-hidden relative z-40">
+      <Banner />
+
+
+
+
+
+
+
+
+
+      {/* <div className="w-full xl:h-[calc(100vh-70px)] overflow-hidden relative z-40">
         <Image
           className="w-full h-full object-cover"
           src="/home/banner.jpg"
@@ -29,7 +40,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
+
+
+
+
       <OurGuiding />
       <WhyUs />
     </main>
@@ -68,7 +85,7 @@ export const generateMetadata = () => {
       siteName: "Finnsap",
       images: [
         {
-          url: `${process.env.BASE_URL}/og.png`, 
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "Finnsap - SAP Services & Consulting",
