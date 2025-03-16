@@ -32,17 +32,12 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
         <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
           <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-            
-            <header style="background-color: #043e96; color: white; padding: 0 20px; height:60px; display: flex; align-items: center; justify-content: space-between;">
-              <!-- Logo -->
+            <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
               <div style="width: 40px; height: 40px; min-width: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                 <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
               </div>
-    
-              <!-- Heading -->
-              <h1 style="flex: 1;background-color: #0dd4ff;padding: 4px 0px; height: fit-content; width:100%; text-align: end; margin: 0; font-size: 20px;">Finnsap</h1>
+              <h1 style="flex: 1; padding: 4px 0px; height: fit-content; width:100%; text-align: end; margin: 0; font-size: 20px;">Finnsap</h1>
             </header>
-    
             <div style="padding: 20px;">
               <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
               <p style="font-size: 16px; color: #333;">${message}</p>
@@ -55,7 +50,6 @@ const sendMail = async ({ name, subject, email, message }) => {
                 </p>
               </div>
             </div>
-    
             <footer style="background-color: #f9f9f9; text-align: center; padding: 15px; font-size: 12px; color: #777;">
               This is an automated email. Please do not reply.
             </footer>
@@ -74,11 +68,11 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
             <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
-                  <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
-                    <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
+                <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+                  <div style="width: 40px; height: 40px; min-width: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
+                   <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <div><h1>Finnsap</h1></div>
+                  <h1 style="flex: 1; padding: 4px 0px; height: fit-content; width:100%; text-align: end; margin: 0; font-size: 20px;">Finnsap</h1>
                 </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Hello <strong>${name}</strong>,</p>
