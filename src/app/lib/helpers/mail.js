@@ -46,7 +46,7 @@ const sendMail = async ({ name, subject, email, message }) => {
                   <strong>Sender Name:</strong> ${name}
                 </p>
                 <p style="margin: 5px 0; font-size: 14px; color: #333;">
-                  <strong>Sender Email:</strong> <a href="mailto:${email}" style="color: #043e96; text-decoration: none;">${email}</a>
+                  <strong>Sender Email:</strong> <a href="mailto:${email}" style="color: #0dd4ff; text-decoration: none;">${email}</a>
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ const sendMail = async ({ name, subject, email, message }) => {
                     Thank you for reaching out to Finnsap. We have received your message and will get back to you as soon as possible.
                   </p>
                   <p style="font-size: 14px; color: #555;">
-                    Meanwhile, feel free to explore our services on <a href="https://www.finnsap.com" style="color: #043e96; text-decoration: none;">www.finnsap.com</a>.
+                    Meanwhile, feel free to explore our services on <a href="${process.env.BASE_URL}" style="color: #0dd4ff; text-decoration: none;">www.finnsap.com</a>.
                   </p>
                 </div>
                 <footer style="background-color: #f9f9f9; text-align: center; padding: 15px; font-size: 12px; color: #777;">
