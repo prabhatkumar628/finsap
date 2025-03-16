@@ -30,35 +30,40 @@ const sendMail = async ({ name, subject, email, message }) => {
       to: process.env.MAIL_USER, // Finnsap Team
       subject: subject,
       html: `
-            <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
-              <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
-                  <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
-                    <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
-                  </div>
-                  <div>
-    <h1>Finnsap</h1>
-  </div>
-                </header>
-                <div style="padding: 20px;">
-                  <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
-                  <p style="font-size: 16px; color: #333;">${message}</p>
-                  <div style="margin-top: 30px; padding: 15px; background: #f9f9f9; border-left: 4px solid #0dd4ff;">
-                    <p style="margin: 5px 0; font-size: 14px; color: #333;">
-                      <strong>Sender Name:</strong> ${name}
-                    </p>
-                    <p style="margin: 5px 0; font-size: 14px; color: #333;">
-                      <strong>Sender Email:</strong> <a href="mailto:${email}" style="color: #043e96; text-decoration: none;">${email}</a>
-                    </p>
-                  </div>
-                </div>
-                <footer style="background-color: #f9f9f9; text-align: center; padding: 15px; font-size: 12px; color: #777;">
-                  This is an automated email. Please do not reply.
-                </footer>
+        <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
+          <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            
+            <header style="background-color: #043e96; color: white; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between;">
+              <!-- Logo -->
+              <div style="width: 50px; height: 50px; min-width: 50px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
+                <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
+              </div>
+    
+              <!-- Heading -->
+              <h1 style="flex: 1; text-align: center; margin: 0; font-size: 20px;">Finnsap</h1>
+            </header>
+    
+            <div style="padding: 20px;">
+              <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
+              <p style="font-size: 16px; color: #333;">${message}</p>
+              <div style="margin-top: 30px; padding: 15px; background: #f9f9f9; border-left: 4px solid #0dd4ff;">
+                <p style="margin: 5px 0; font-size: 14px; color: #333;">
+                  <strong>Sender Name:</strong> ${name}
+                </p>
+                <p style="margin: 5px 0; font-size: 14px; color: #333;">
+                  <strong>Sender Email:</strong> <a href="mailto:${email}" style="color: #043e96; text-decoration: none;">${email}</a>
+                </p>
               </div>
             </div>
-            `
+    
+            <footer style="background-color: #f9f9f9; text-align: center; padding: 15px; font-size: 12px; color: #777;">
+              This is an automated email. Please do not reply.
+            </footer>
+          </div>
+        </div>
+      `
     };
+    
 
 
     // 2nd Email: User ko confirmation mail
@@ -73,11 +78,8 @@ const sendMail = async ({ name, subject, email, message }) => {
                   <div style="width: 40px; min-width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <div style="width: 100%; "background-color: #000; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;  text-align: end; vertical-align: middle;">
-                    <h1 style=""background-color: red;  text-align: end; vertical-align: middle;">Finnsap</h1>
-                  </div>
+                  <div><h1>Finnsap</h1></div>
                 </header>
-
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Hello <strong>${name}</strong>,</p>
                   <p style="font-size: 16px; color: #333;">
