@@ -53,7 +53,7 @@ export const generateMetadata = () => {
         title: "About Finnsap - Leading SAP Solutions & Consulting",
         description:
           "Get to know Finnsap, a trusted SAP consulting and ERP solutions provider, helping businesses achieve efficiency and success.",
-        images: [`${process.env.BASE_URL}/about`],
+        images: [`${process.env.BASE_URL}/og.png`],
       },
       robots: "index, follow",
       alternates: {
