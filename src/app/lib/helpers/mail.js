@@ -40,7 +40,7 @@ const sendMail = async ({ name, subject, email, message }) => {
               </div>
     
               <!-- Heading -->
-              <h1 style="flex: 1;"background-color: #0dd4ff; text-align: center; margin: 0; font-size: 20px;">Finnsap</h1>
+              <h1 style="flex: 1;background-color: #0dd4ff; text-align: center; margin: 0; font-size: 20px;">Finnsap</h1>
             </header>
     
             <div style="padding: 20px;">
