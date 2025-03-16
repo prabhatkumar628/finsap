@@ -36,8 +36,8 @@ const sendMail = async ({ name, subject, email, message }) => {
                   <div style="width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <h1 style="flex-grow: 1; text-align: center; margin: 0;">Finnsap</h1>
-                  <div style="width: 50px; height: 50px; visibility: hidden;"></div>
+                  <div style="width: 100%; height: 100%; visibility: hidden;"></div>
+                  <h1 style="flex-grow: 1; text-align: center; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
                 </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
@@ -72,8 +72,8 @@ const sendMail = async ({ name, subject, email, message }) => {
                   <div style="width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
                     <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
                   </div>
-                  <h1 style="flex-grow: 1; text-align: center; margin: 0;">Finnsap</h1>
-                  <div style="width: 50px; height: 50px; visibility: hidden;"></div>
+                  <div style="width: 100%; height: 100%; visibility: hidden;"></div>
+                  <h1 style="flex-grow: 1; text-align: center; margin: 0; height:100%; display:grid; place-items: center; ">Finnsap</h1>
                 </header>
 
                 <div style="padding: 20px;">
