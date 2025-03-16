@@ -36,11 +36,11 @@ export const generateMetadata = () => {
         title: "About Finnsap - Trusted SAP Services & ERP Consulting",
         description:
           "Finnsap is a leading SAP consulting firm providing expert ERP solutions, business transformation, and IT services to help companies grow.",
-        url: "https://www.finnsap.com/about",
+        url: `${process.env.BASE_URL}/about`,
         siteName: "Finnsap",
         images: [
           {
-            url: "https://www.finnsap.com/og.png",
+            url: `${process.env.BASE_URL}/og.png`,
             width: 1200,
             height: 630,
             alt: "About Finnsap - SAP Services & Consulting",
@@ -53,11 +53,11 @@ export const generateMetadata = () => {
         title: "About Finnsap - Leading SAP Solutions & Consulting",
         description:
           "Get to know Finnsap, a trusted SAP consulting and ERP solutions provider, helping businesses achieve efficiency and success.",
-        images: ["https://www.finnsap.com/og.png"],
+        images: [`${process.env.BASE_URL}/about`],
       },
       robots: "index, follow",
       alternates: {
-        canonical: "https://www.finnsap.com/about",
+        canonical: `${process.env.BASE_URL}/about`,
       },
     };
   };

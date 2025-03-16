@@ -114,11 +114,11 @@ export const generateMetadata = () => {
       title: "SAP ERP Consulting - Comprehensive SAP ERP Solutions",
       description:
         "Optimize your business operations with Finnsap’s SAP ERP consulting services. We provide expert implementation, migration, and support for SAP ERP systems.",
-      url: "https://www.finnsap.com/services/SAP-Services/SAP-EPR-Consulting",
+      url: `${process.env.BASE_URL}/services/SAP-Services/SAP-EPR-Consulting`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "SAP ERP Consulting - Finnsap",
@@ -131,11 +131,11 @@ export const generateMetadata = () => {
       title: "SAP ERP Consulting - Optimize Your Business with SAP",
       description:
         "Finnsap offers expert SAP ERP consulting services to help businesses streamline operations, improve efficiency, and drive digital transformation.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-EPR-Consulting",
+      canonical: `${process.env.BASE_URL}/services/SAP-Services/SAP-EPR-Consulting`,
     },
   };
 };

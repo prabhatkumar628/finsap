@@ -58,7 +58,7 @@ export default function SapEccAms() {
                   <Image
                     className="w-full h-auto object-cover rounded-4xl"
                     src="/services/sap-ecc-s4hana/security.jpg"
-                    alt="Oil & Gas Industry"
+                    alt="security"
                     width={600}
                     height={400}
                     layout="responsive"
@@ -72,7 +72,7 @@ export default function SapEccAms() {
                 <Image
                   className="rounded-4xl object-cover"
                   src="/services/sap-ecc-s4hana/analysis.jpg"
-                  alt="Oil & Gas Industry"
+                  alt="analysis"
                   fill
                   priority
                 />
@@ -111,11 +111,11 @@ export const generateMetadata = () => {
       title: "SAP ECC & S/4HANA AMS - Expert SAP Application Management Services",
       description:
         "Ensure smooth SAP ECC & S/4HANA operations with Finnsap's AMS solutions. We offer expert support, maintenance, and optimization for your SAP systems.",
-      url: "https://www.finnsap.com/services/SAP-Services/SAP-ECC-S4HANA-AMS",
+      url: `${process.env.BASE_URL}/services/SAP-Services/SAP-ECC-S4HANA-AMS`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "SAP ECC & S/4HANA AMS - Finnsap",
@@ -128,11 +128,11 @@ export const generateMetadata = () => {
       title: "SAP ECC & S/4HANA AMS - SAP Application Management Services",
       description:
         "Finnsap provides end-to-end SAP AMS solutions, ensuring optimal performance and continuous improvement for SAP ECC & S/4HANA systems.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-ECC-S4HANA-AMS",
+      canonical: `${process.env.BASE_URL}/services/SAP-Services/SAP-ECC-S4HANA-AMS`,
     },
   };
 };

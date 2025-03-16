@@ -62,8 +62,8 @@ const ContactForm = () => {
             <h2 className="text-2xl font-semibold text-center mb-4">Contact Us</h2>
             {loading && <Loading/> }
 
-            {error && <p className="text-red-500 text-sm text-center">{error}</p>}
-            {success && <p className="text-green-500 text-sm text-center">{success}</p>}
+            {error && <p className={`text-red-500 text-sm pb-2 text-center`}>{error}</p>}
+            {success && <p className={`text-green-500 text-sm pb-2 text-center`}>{success}</p>}
 
             <form onSubmit={handleSubmit} className="space-y-4">
                 <input

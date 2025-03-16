@@ -36,7 +36,7 @@ export default function MobileAppSupport() {
             <div className="w-[70px] min-w-[50px] h-[70px] grid place-items-center">
               <Image
                 src="/services/web-services/app-support/appsupporticon.png"
-                alt='mobile app support icon' width={70} height={70}
+                alt='app support' width={70} height={70}
               />
             </div>
             <h1 className="text-3xl md:text-4xl py-2 flex items-center gap-3 text-[#043e96] relative after:absolute after:w-[80px] md:after:w-[100px] after:h-[2px] after:bottom-[-6px] after:left-0 after:bg-[#0ed4ff]">
@@ -123,11 +123,11 @@ export const generateMetadata = () => {
       title: "Mobile App Support & Maintenance Services - Finnsap",
       description:
         "Keep your mobile app secure and high-performing with Finnsap's professional support services. We provide troubleshooting, bug fixes, and updates.",
-      url: "https://www.finnsap.com/services/Web-Services/Mobile-App-Support",
+      url: `${process.env.BASE_URL}/services/Web-Services/Mobile-App-Support`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "Mobile App Support Services - Finnsap",
@@ -140,11 +140,11 @@ export const generateMetadata = () => {
       title: "Mobile App Support & Maintenance Services",
       description:
         "Get expert mobile app support from Finnsap. We handle bug fixes, security patches, performance optimization, and continuous maintenance.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/Web-Services/Mobile-App-Support",
+      canonical: `${process.env.BASE_URL}/services/Web-Services/Mobile-App-Support`,
     },
   };
 };

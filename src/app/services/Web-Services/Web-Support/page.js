@@ -122,11 +122,11 @@ export const generateMetadata = () => {
       title: "Web Support & Maintenance Services - Finnsap",
       description:
         "Ensure your website remains secure, fast, and up-to-date with Finnsap's expert web support and maintenance services.",
-      url: "https://www.finnsap.com/services/Web-Services/Web-Support",
+      url: `${process.env.BASE_URL}/services/Web-Services/Web-Support`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "Web Support & Maintenance Services - Finnsap",
@@ -139,11 +139,11 @@ export const generateMetadata = () => {
       title: "Web Support & Maintenance Services | Finnsap",
       description:
         "Keep your website running smoothly with Finnsap’s web support services. We offer security updates, bug fixes, content management, and performance optimization.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/Web-Services/Web-Support",
+      canonical: `${process.env.BASE_URL}/services/Web-Services/Web-Support`,
     },
   };
 };

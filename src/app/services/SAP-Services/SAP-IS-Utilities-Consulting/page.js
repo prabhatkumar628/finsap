@@ -68,7 +68,7 @@ export default function SapIsUtilities() {
                             <Image
                                 className="w-full h-full object-cover rounded-4xl max-w-[650px]"
                                 src="/services/sap-is-utilities/sapis.avif"
-                                alt="Banner Image"
+                                alt="happy"
                                 width={1920}
                                 height={1080}
                                 layout="responsive"
@@ -107,11 +107,11 @@ export const generateMetadata = () => {
         title: "SAP IS-Utilities Consulting - Optimize Utility Operations",
         description:
           "Get expert SAP IS-Utilities solutions with Finnsap. Enhance efficiency in energy, water, and waste management industries through SAP consulting.",
-        url: "https://www.finnsap.com/services/SAP-Services/SAP-IS-Utilities-Consulting",
+        url: `${process.env.BASE_URL}/services/SAP-Services/SAP-IS-Utilities-Consulting`,
         siteName: "Finnsap",
         images: [
           {
-            url: "https://www.finnsap.com/og.png",
+            url: `${process.env.BASE_URL}/og.png`,
             width: 1200,
             height: 630,
             alt: "SAP IS-Utilities Consulting - Finnsap",
@@ -124,11 +124,11 @@ export const generateMetadata = () => {
         title: "SAP IS-Utilities Consulting - Transform Utility Operations",
         description:
           "Finnsap offers top-tier SAP IS-Utilities consulting services. Optimize your energy, water, and waste management business with SAP solutions.",
-        images: ["https://www.finnsap.com/og.png"],
+        images: [`${process.env.BASE_URL}/og.png`],
       },
       robots: "index, follow",
       alternates: {
-        canonical: "https://www.finnsap.com/services/SAP-Services/SAP-IS-Utilities-Consulting",
+        canonical: `${process.env.BASE_URL}/services/SAP-Services/SAP-IS-Utilities-Consulting`,
       },
     };
   };

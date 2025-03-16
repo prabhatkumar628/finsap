@@ -53,7 +53,7 @@ export default function Page() {
                                     <Image
                                         className="w-full h-auto object-cover rounded-4xl"
                                         src="/industries/oil-and-gas-consulting/oil-drilling.jpg"
-                                        alt="Oil & Gas Industry"
+                                        alt="Oil drilling"
                                         width={600}
                                         height={400}
                                         layout="responsive"
@@ -106,11 +106,11 @@ export const generateMetadata = () => {
         title: "SAP Oil & Gas Consulting - Optimize Your Energy Business",
         description:
           "Get expert SAP solutions for the oil & gas industry with Finnsap. From SAP S/4HANA to ERP integration, we help energy businesses streamline operations.",
-        url: "https://www.finnsap.com/industries/SAP-Oil-And-Gas-Consulting",
+        url: `${process.env.BASE_URL}/industries/SAP-Oil-And-Gas-Consulting`,
         siteName: "Finnsap",
         images: [
           {
-            url: "https://www.finnsap.com/og.png",
+            url: `${process.env.BASE_URL}/og.png`,
             width: 1200,
             height: 630,
             alt: "SAP Oil & Gas Consulting - Finnsap",
@@ -123,11 +123,11 @@ export const generateMetadata = () => {
         title: "SAP Oil & Gas Consulting - Expert SAP Solutions",
         description:
           "Finnsap offers top-tier SAP consulting for the oil & gas industry. Optimize operations, enhance efficiency, and drive digital transformation.",
-        images: ["https://www.finnsap.com/og.png"],
+        images: [`${process.env.BASE_URL}/og.png`],
       },
       robots: "index, follow",
       alternates: {
-        canonical: "https://www.finnsap.com/industries/SAP-Oil-And-Gas-Consulting",
+        canonical: `${process.env.BASE_URL}/industries/SAP-Oil-And-Gas-Consulting`,
       },
     };
   };

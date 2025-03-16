@@ -58,7 +58,7 @@ export default function SapBrim() {
                   <Image
                     className="w-full h-auto object-cover rounded-4xl"
                     src="/services/sap-brim/calculation.jpg"
-                    alt="Oil & Gas Industry"
+                    alt="calculation"
                     width={600} 
                     height={400}
                     layout="responsive"
@@ -72,7 +72,7 @@ export default function SapBrim() {
                 <Image
                   className="rounded-4xl object-cover"
                   src="/services/sap-brim/desk.jpg"
-                  alt="Oil & Gas Industry"
+                  alt="desk"
                   fill
                   priority
                 />
@@ -111,11 +111,11 @@ export const generateMetadata = () => {
       title: "SAP BRIM Consulting - Optimize Your Billing & Revenue Management",
       description:
         "Finnsap offers SAP BRIM consulting services, ensuring efficient billing, revenue management, and subscription monetization for modern businesses.",
-      url: "https://www.finnsap.com/services/SAP-Services/SAP-BRIM-Consulting",
+      url: `${process.env.BASE_URL}/services/SAP-Services/SAP-BRIM-Consulting`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "SAP BRIM Consulting - Finnsap",
@@ -128,11 +128,11 @@ export const generateMetadata = () => {
       title: "SAP BRIM Consulting - Transform Your Billing & Revenue Management",
       description:
         "Unlock the full potential of SAP BRIM with Finnsap's expert consulting services. Enhance billing, revenue management, and subscription solutions.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-BRIM-Consulting",
+      canonical: `${process.env.BASE_URL}/services/SAP-Services/SAP-BRIM-Consulting`,
     },
   };
 };

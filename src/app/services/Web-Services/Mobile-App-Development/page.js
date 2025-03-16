@@ -34,7 +34,7 @@ export default function MobileAppDevelopment() {
             <div className="w-[70px] min-w-[50px] h-[70px] grid place-items-center">
               <Image
                 src="/services/web-services/app-development/appdevicon.png"
-                alt='mobile app development icon' width={70} height={70}
+                alt='app development' width={70} height={70}
               />
             </div>
             <h1 className="text-3xl md:text-4xl py-2 flex items-center gap-3 text-[#043e96] relative after:absolute after:w-[80px] md:after:w-[100px] after:h-[2px] after:bottom-[-6px] after:left-0 after:bg-[#0ed4ff]">
@@ -78,7 +78,7 @@ export default function MobileAppDevelopment() {
                   <Image
                     className="w-full h-full rounded-3xl object-cover "
                     src="/services/web-services/app-development/appdev.jpg"
-                    alt="app dev banner"
+                    alt="app development banner"
                     width={600}
                     height={400}
                     layout="responsive"
@@ -121,11 +121,11 @@ export const generateMetadata = () => {
       title: "Mobile App Development Services - Custom Solutions by Finnsap",
       description:
         "Explore Finnsap's mobile app development expertise in iOS, Android, and cross-platform applications. Custom solutions for startups & enterprises.",
-      url: "https://www.finnsap.com/services/Web-Services/Mobile-App-Development",
+      url: `${process.env.BASE_URL}/services/Web-Services/Mobile-App-Development`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "Mobile App Development Services - Finnsap",
@@ -138,11 +138,11 @@ export const generateMetadata = () => {
       title: "Mobile App Development - Custom App Solutions",
       description:
         "Get high-performance mobile app solutions with Finnsap. We specialize in iOS, Android, and cross-platform development.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/Web-Services/Mobile-App-Development",
+      canonical: `${process.env.BASE_URL}/services/Web-Services/Mobile-App-Development`,
     },
   };
 };

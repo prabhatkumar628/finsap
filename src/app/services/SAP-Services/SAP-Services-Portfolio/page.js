@@ -90,11 +90,11 @@ export const generateMetadata = () => {
       title: "SAP Services Portfolio - End-to-End SAP Solutions",
       description:
         "Discover Finnsap's SAP services, from consulting and implementation to migration and support. Tailored SAP solutions for business success.",
-      url: "https://www.finnsap.com/services/SAP-Services/SAP-Services-Portfolio",
+      url: `${process.env.BASE_URL}/services/SAP-Services/SAP-Services-Portfolio`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "SAP Services Portfolio - Finnsap",
@@ -107,11 +107,11 @@ export const generateMetadata = () => {
       title: "SAP Services Portfolio - Comprehensive SAP Solutions",
       description:
         "Explore Finnsap’s SAP services, including consulting, implementation, and support. Tailored SAP solutions for enterprises.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-Services-Portfolio",
+      canonical: `${process.env.BASE_URL}/services/SAP-Services/SAP-Services-Portfolio`,
     },
   };
 };

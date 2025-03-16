@@ -11,7 +11,7 @@ export default function GlobalReach() {
                     <Image
                         className="w-full h-full object-cover"
                         src="/about/global.jpg"
-                        alt="Banner Image"
+                        alt="global reach"
                         width={1920}
                         height={1080}
                         layout="responsive"

@@ -122,11 +122,11 @@ export const generateMetadata = () => {
       title: "Web Development Services - Custom Websites & Web Apps",
       description:
         "Build high-performing websites & web apps with Finnsap. From front-end to full-stack development, we deliver scalable solutions for your business.",
-      url: "https://www.finnsap.com/services/Web-Services/Web-Development",
+      url: `${process.env.BASE_URL}/services/Web-Services/Web-Development`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "Web Development Services - Finnsap",
@@ -139,11 +139,11 @@ export const generateMetadata = () => {
       title: "Web Development Services - Finnsap",
       description:
         "Finnsap offers cutting-edge web development services. Get custom-built websites, web apps, and enterprise solutions tailored to your business needs.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/Web-Services/Web-Development",
+      canonical: `${process.env.BASE_URL}/services/Web-Services/Web-Development`,
     },
   };
 };

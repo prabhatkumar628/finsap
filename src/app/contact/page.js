@@ -14,12 +14,12 @@ export default function ContactUs() {
           <div className="w-full h-full min-h-[80vh] md:px-10 lg:px-16 grid grid-cols-12 pt-10 md:pt-0 gap-4 md:gap-0 lg:gap-6">
             <div className="col-span-12 md:col-span-6 order-2 md:order-1 grid place-items-center h-full">
               <div className="flex flex-col md:gap-16 w-fit h-fit">
-                <div className="w-[70%]">
+                <div className="w-[70%] mt-6 md:mt-16">
                   <Image
                     src="/contact/finlogo.png"
                     width={400}
                     height={100}
-                    alt="logo"
+                    alt="finnsap"
                     className="w-full h-auto object-contain"
                   />
                 </div>
@@ -30,14 +30,24 @@ export default function ContactUs() {
                       <span className={`${unbounded.className} font-light`}>Connect</span>
                     </h1>
                     <div className={`${unbounded.className} text-[#053d99] text-lg md:text-2xl font-extralight flex flex-col justify-end items-end ms-auto md:justify-start md:items-start md:m-auto gap-1 md:gap-3 pb-10`}>
-                      <Link href={"/"}> call: +91 93541 6844</Link>
-                      <Link href={"/"}>+91 91355 51695</Link>
-                      <Link href={"/"}>info@finnsa p.com</Link>
+                      <Link href="tel:+919354168443"> call: +91 93541 68443</Link>
+                      <Link href="https://wa.me/919135551695" target="_blank" rel="noopener noreferrer">
+                        <div className="flex gap-2 items-center">
+                          <div className="w-[30px] min-w-[30px] h-[30px] md:w-[40px] md:min-w-[40px] md:h-[40px] grid place-items-center">
+                            <Image
+                              className="rounded-lg"
+                              src="/contact/whatsapp.png"
+                              alt="whatsapp" width={70} height={70}
+                            />
+                          </div>
+                          <span>+91 91355 51695</span>
+                        </div>
+                      </Link>
+                      <Link href="mailto:info@finnsap.com">info@finnsap.com</Link>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
             <div className="col-span-12 md:col-span-6 order-1 md:order-2 grid place-items-center">
               <ContactForm />
@@ -75,11 +85,11 @@ export const generateMetadata = () => {
       title: "Contact Finnsap - Leading SAP Consulting & ERP Solutions",
       description:
         "Need expert SAP consulting? Contact Finnsap today for tailored SAP solutions, ERP support, and IT consulting services.",
-      url: "https://www.finnsap.com/contact",
+      url: `${process.env.BASE_URL}/contact`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "Finnsap Contact - SAP Consulting & ERP Solutions",
@@ -92,11 +102,11 @@ export const generateMetadata = () => {
       title: "Contact Finnsap - Expert SAP Services & Consulting",
       description:
         "Get in touch with Finnsap for world-class SAP solutions, ERP consulting, and business transformation services.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/contact",
+      canonical: `${process.env.BASE_URL}/contact`,
     },
   };
 };

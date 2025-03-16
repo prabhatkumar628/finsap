@@ -185,7 +185,7 @@ export default function Header() {
                             <FaLinkedin />
                         </div>
                     </Link>
-                    <Link href={"/about"}>
+                    <Link href={"/"}>
                         <div className="icon-box w-[40px] h-[40px] lg:w-[45px] lg:h-[45px] rounded-sm shadow-1 text-[#043e96] grid place-items-center">
                             <FaSquareXTwitter />
                         </div>

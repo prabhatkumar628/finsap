@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className="h-full w-full order-3 md:order-3 lg:order-3 col-span-6 md:col-span-4 lg:col-span-3">
                         <div className="sm:grid  sm:place-items-center text-end sm:text-center">
                             <div className="flex justify-end">
-                                <h4 className={`font-semibold text-end  uppercase text-xl relative py-4 before:content-[''] before:absolute before:bottom-0 before:right-0 sm:before:left-[50%] sm:before:translate-x-[-50%] before:w-[30px] before:h-[3px] hover:before:w-full w-max before:transition-all duration-200 ease-linear before:bg-[#0ed4ff]`}>Company</h4>
+                                <h3 className={`font-semibold text-end  uppercase text-xl relative py-4 before:content-[''] before:absolute before:bottom-0 before:right-0 sm:before:left-[50%] sm:before:translate-x-[-50%] before:w-[30px] before:h-[3px] hover:before:w-full w-max before:transition-all duration-200 ease-linear before:bg-[#0ed4ff]`}>Company</h3>
                             </div>
                             <div className="mt-4 text-sm flex flex-col gap-2">
                                 <p><Link href={"/"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Home</Link></p>
@@ -26,7 +26,6 @@ export default function Footer() {
                                 <p><Link href={"/about"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">About Us</Link></p>
                                 <p><Link href={"/contact"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Contact Us</Link></p>
                             </div>
-
                         </div>
                     </div>
                     <div className="h-full w-full order-4 md:order-4 lg:order-4 col-span-6 md:col-span-12 lg:col-span-3">
@@ -34,7 +33,7 @@ export default function Footer() {
                             <h4 className={h4css}>FOLLOW US</h4>
                             <Link href={"/"} className='hidden lg:block'>
                                 <div className=" place-items-center my-4 grid">
-                                    <img className="min-w-[100px] w-[100px] rounded-md" src="/og.png" alt="" />
+                                    <img className="min-w-[100px] w-[100px] rounded-md" src="/og.png" alt="finnsap logo" />
                                 </div>
                             </Link>
 

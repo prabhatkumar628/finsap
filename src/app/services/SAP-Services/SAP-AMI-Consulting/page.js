@@ -58,7 +58,7 @@ export default function SapAmiConsulting() {
                   <Image
                     className="w-full h-auto object-cover rounded-4xl"
                     src="/services/sap-ami/graph.jpeg"
-                    alt="Oil & Gas Industry"
+                    alt="graph"
                     width={600}
                     height={400}
                     layout="responsive"
@@ -72,7 +72,7 @@ export default function SapAmiConsulting() {
                 <Image
                   className="rounded-4xl object-cover"
                   src="/services/sap-ami/businessman.jpg"
-                  alt="Oil & Gas Industry"
+                  alt="businessman"
                   fill
                   priority
                 />
@@ -111,11 +111,11 @@ export const generateMetadata = () => {
       title: "SAP AMI Consulting - Smart Metering & Utility Management",
       description:
         "Optimize your utility management with SAP AMI consulting by Finnsap. We provide smart metering, real-time data processing, and grid optimization solutions.",
-      url: "https://www.finnsap.com/services/SAP-Services/SAP-AMI-Consulting",
+      url: `${process.env.BASE_URL}/services/SAP-Services/SAP-AMI-Consulting`,
       siteName: "Finnsap",
       images: [
         {
-          url: "https://www.finnsap.com/og.png",
+          url: `${process.env.BASE_URL}/og.png`,
           width: 1200,
           height: 630,
           alt: "SAP AMI Consulting - Finnsap",
@@ -128,11 +128,11 @@ export const generateMetadata = () => {
       title: "SAP AMI Consulting - Smart Utility & Metering Solutions",
       description:
         "Transform utility operations with SAP AMI consulting by Finnsap. Get smart metering, real-time data insights, and seamless integration solutions.",
-      images: ["https://www.finnsap.com/og.png"],
+      images: [`${process.env.BASE_URL}/og.png`],
     },
     robots: "index, follow",
     alternates: {
-      canonical: "https://www.finnsap.com/services/SAP-Services/SAP-AMI-Consulting",
+      canonical: `${process.env.BASE_URL}/services/SAP-Services/SAP-AMI-Consulting`,
     },
   };
 };
