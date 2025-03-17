@@ -180,7 +180,7 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="flex items-center gap-2 text-3xl">
-                    <Link href={"/"}>
+                    <Link href="https://wa.me/919135551695" target="_blank" rel="noopener noreferrer">
                         <div className="icon-box w-[40px] h-[40px] lg:w-[45px] lg:h-[45px] rounded-sm shadow-1 text-[#043e96] grid place-items-center">
                             <FaSquareWhatsapp />
                         </div>
