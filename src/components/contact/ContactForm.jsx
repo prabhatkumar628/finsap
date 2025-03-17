@@ -36,7 +36,6 @@ const ContactForm = () => {
         setError("");
         setSuccess("");
 
-        // Validate with Zod
         const validationResult = contactSchema.safeParse(formData);
         if (!validationResult.success) {
             setError(validationResult.error.errors[0].message);
@@ -62,10 +61,8 @@ const ContactForm = () => {
             <h2 className="text-2xl font-semibold text-center ">Contact Us</h2>
             <h3 className="text-xs font-semibold text-center mt-3 mb-4">Begin your journey to business growth and achieve outstanding results by completing this form.</h3>
             {loading && <Loading/> }
-
-            {error && <p className={`text-red-500 text-sm pb-3 text-center`}>{error}</p>}
-            {success && <p className={`text-green-500 text-sm pb-3 text-center`}>{success}</p>}
-
+            {error && <p className={`text-red-500 text-sm pb-3 -mt-1 text-center`}>{error}</p>}
+            {success && <p className={`text-green-500 text-sm pb-3 -mt-1 text-center`}>{success}</p>}
             <form onSubmit={handleSubmit} className="space-y-4">
                 <input
                     type="text"

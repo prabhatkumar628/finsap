@@ -1,9 +1,6 @@
 import nodemailer from "nodemailer";
 
 const sendMail = async ({ name, subject, email, message }) => {
-  console.log("MAIL_USER:", process.env.MAIL_USER);
-  console.log("MAIL_PASS:", process.env.MAIL_PASS);
-
   try {
     // const transporter = nodemailer.createTransport({
     //     host: "smtp.gmail.com",
@@ -27,7 +24,7 @@ const sendMail = async ({ name, subject, email, message }) => {
     // 1st Email: Finnsap Team ko user ka message
     const mailOptions = {
       from: process.env.MAIL_USER,
-      to: process.env.MAIL_USER, // Finnsap Team
+      to: process.env.MAIL_USER, 
       subject: subject,
       html: `
         <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
@@ -90,11 +87,8 @@ const sendMail = async ({ name, subject, email, message }) => {
             </div>
             `
     };
-
-    // Emails send karna
-    await transporter.sendMail(mailOptions);  // Finnsap ko mail
-    await transporter.sendMail(mailOptions2); // User ko confirmation mail
-
+    await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions2);
     return { success: true, message: "Emails Sent Successfully!" };
 
   } catch (error) {
