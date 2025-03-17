@@ -32,9 +32,9 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
         <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
           <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+                <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: center;">
                   <div style="position: relative; width: 120px; height: 40px;">
-                      <h1 id="heading" style="position: absolute; width: 100%; text-align: center; margin: 0; font-size: 20px; line-height: 40px; color: white;">
+                      <h1 id="heading" style="background-color: red; width: 100%; text-align: center; margin: 0; font-size: 20px; line-height: 40px; color: white;">
                           Finnsap
                       </h1>
                       <img id="logo" src="${process.env.BASE_URL}/logo.png" alt="Finnsap Logo" 
@@ -77,9 +77,9 @@ const sendMail = async ({ name, subject, email, message }) => {
       html: `
             <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+                <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: center;">
                   <div style="position: relative; width: 120px; height: 40px;">
-                      <h1 id="heading" style="position: absolute; width: 100%; text-align: center; margin: 0; font-size: 20px; line-height: 40px; color: white;">
+                      <h1 id="heading" style="background-color: red; width: 100%; text-align: center; margin: 0; font-size: 20px; line-height: 40px; color: white;">
                           Finnsap
                       </h1>
                       <img id="logo" src="${process.env.BASE_URL}/logo.png" alt="Finnsap Logo" 
