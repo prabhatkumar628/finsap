@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { VscThreeBars } from "react-icons/vsc";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { IoChevronDownSharp } from "react-icons/io5";
@@ -182,7 +182,7 @@ export default function Header() {
                 <div className="flex items-center gap-2 text-3xl">
                     <Link href={"/"}>
                         <div className="icon-box w-[40px] h-[40px] lg:w-[45px] lg:h-[45px] rounded-sm shadow-1 text-[#043e96] grid place-items-center">
-                            <FaLinkedin />
+                            <FaSquareWhatsapp />
                         </div>
                     </Link>
                     <Link href={"/"}>

@@ -33,11 +33,20 @@ const sendMail = async ({ name, subject, email, message }) => {
         <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
           <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
             <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
-              <div style="width: 40px; height: 40px; min-width: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
-                <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
-              </div>
-              <h1 style="flex: 1; padding: 4px 0px; height: fit-content; width:100%; text-align: end; margin: 0; font-size: 20px;">Finnsap</h1>
+                <div style="position: relative; width: 120px; height: 40px;">
+                    <h1 id="heading" style="position: absolute; width: 100%; text-align: center; margin: 0; font-size: 20px; line-height: 40px; color: white;">
+                        Finnsap
+                    </h1>
+                    <img id="logo" src="${process.env.BASE_URL}/logo.png" alt="Finnsap Logo" 
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; display: none;  border-radius: 6px;"
+                        onload="document.getElementById('heading').style.display='none'; this.style.display='block';">
+                </div>
             </header>
+
+            
+
+
+
             <div style="padding: 20px;">
               <p style="font-size: 16px; color: #333;">Dear <strong>Finnsap Team</strong>,</p>
               <p style="font-size: 16px; color: #333;">${message}</p>
@@ -57,7 +66,7 @@ const sendMail = async ({ name, subject, email, message }) => {
         </div>
       `
     };
-    
+
 
 
     // 2nd Email: User ko confirmation mail
@@ -69,11 +78,15 @@ const sendMail = async ({ name, subject, email, message }) => {
             <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                 <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
-                  <div style="width: 40px; height: 40px; min-width: 40px; background: white; border-radius: 10px; display: flex; justify-content: center; align-items: center;">
-                   <img src="${process.env.BASE_URL}/fabicon.png" alt="Finnsap Logo" style="width: 100%; height: 100%; border-radius: 8px;">
-                  </div>
-                  <h1 style="flex: 1; padding: 4px 0px; height: fit-content; width:100%; text-align: end; margin: 0; font-size: 20px;">Finnsap</h1>
-                </header>
+                <div style="position: relative; width: 120px; height: 40px;">
+                    <h1 id="heading" style="position: absolute; width: 100%; text-align: center; margin: 0; font-size: 20px; line-height: 40px; color: white;">
+                        Finnsap
+                    </h1>
+                    <img id="logo" src="${process.env.BASE_URL}/logo.png" alt="Finnsap Logo" 
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; display: none;  border-radius: 6px;"
+                        onload="document.getElementById('heading').style.display='none'; this.style.display='block';">
+                </div>
+            </header>
                 <div style="padding: 20px;">
                   <p style="font-size: 16px; color: #333;">Hello <strong>${name}</strong>,</p>
                   <p style="font-size: 16px; color: #333;">

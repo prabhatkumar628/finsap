@@ -10,15 +10,6 @@ export default function Home() {
   return (
     <main>
       <Banner />
-
-
-
-
-
-
-
-
-
       {/* <div className="w-full xl:h-[calc(100vh-70px)] overflow-hidden relative z-40">
         <Image
           className="w-full h-full object-cover"
@@ -41,12 +32,6 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-
-
-
-
-
-
       <OurGuiding />
       <WhyUs />
     </main>

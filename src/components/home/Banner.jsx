@@ -48,15 +48,11 @@ export default function Banner() {
                 {banner.map((img, index) => (
                     <div key={index} className="max-h-[90vh] relative overflow-hidden">
                         <img src={`/home/banner/${img}`} alt={`banner-${index + 1}`} />
-                        <div className="absolute bg-[rgba(0,0,0,0.5)] top-0 left-0 w-full min-h-full flex justify-center items-center pe-[40%] pt-[20%] md:pt-[10%]">
+                        <div className="absolute bg-[rgba(0,0,0,0.5)] top-0 left-0 w-full min-h-full flex justify-center items-center pe-[10%] xl:pe-[20%] pt-[30%] md:pt-[30%]">
                             <div className="flex flex-col text-white">
-                                <h1 className={`${unbounded.className} pb-2 md:pb-3 sm:text-xl md:text-2xl lg:text-4xl font-light relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-[#0dd4ff] after:w-[60px] after:h-[3px] `}>
-                                    Your Partner for Top-Tier SAP<br />ERP & Intelligence Solutions
+                                <h1 className={`${unbounded.className} pb-2 md:pb-3 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-[#0dd4ff] after:w-[60px] after:h-[3px] `}>
+                                    Your Partner for Top-Tier SAP<br  />ERP & Intelligence Solutions
                                 </h1>
-                                <div className=" text-2xl sm:text-3xl md:text-5xl lg:text-7xl w-fit flex flex-col pt-2 gap-0">
-                                    <span className={`${unbounded.className} font-light`}>COMPANY</span>
-                                    <span className={`${unbounded.className} tracking-widest font-semibold`}>PROFILE</span>
-                                </div>
                             </div>
                         </div>
                     </div>
