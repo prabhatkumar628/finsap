@@ -27,7 +27,6 @@ export default function Header() {
         console.log(pathname)
     }, [pathname])
 
-
     useEffect(() => {
         const handleScroll = () => {
             const currentScroolY = window.scrollY
