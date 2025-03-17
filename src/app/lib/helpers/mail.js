@@ -31,7 +31,7 @@ const sendMail = async ({ name, subject, email, message }) => {
           <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                 <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
                   <div
-                    style="position: relative; width: 120px; height: 20px; font-size: 25px; font-weight: 700; display: flex; justify-content: center; align-items: center;">
+                    style="position: relative; width: 120px; height: 40px; font-size: 20px; font-weight: 500; display: flex; justify-content: center; align-items: center;">
                     <img style="width: 100%; height: 100%; position: absolute; border-radius: 5px;" src="${process.env.BASE_URL}/logo.png" alt="Finnsap Logo">
                   </div>
                   <h1 style="flex: 1; padding: 4px 0px; height: fit-content; width:100%; text-align: end; margin: 0; font-size: 20px;">Finnsap</h1>
@@ -66,7 +66,7 @@ const sendMail = async ({ name, subject, email, message }) => {
               <div style="max-width: 600px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                 <header style="background-color: #043e96; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
                   <div
-                    style="position: relative; width: 120px; height: 20px; font-size: 25px; font-weight: 700; display: flex; justify-content: center; align-items: center;">
+                    style="position: relative; width: 120px; height: 40px; font-size: 20px; font-weight: 500; display: flex; justify-content: center; align-items: center;">
                     <img style="width: 100%; height: 100%; position: absolute; border-radius: 5px;" src="${process.env.BASE_URL}/logo.png" alt="Finnsap Logo">
                   </div>
                   <h1 style="flex: 1; padding: 4px 0px; height: fit-content; width:100%; text-align: end; margin: 0; font-size: 20px;">Finnsap</h1>
