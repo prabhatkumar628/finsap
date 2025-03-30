@@ -54,8 +54,7 @@ export default function MobileAppDevelopment() {
               </div>
               <div className={`order-1 md:order-2 col-span-12 md:col-span-7 ${unbounded.className} flex items-center`}>
                 <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                  <span className='font-semibold'>Overview: </span>
-                  At Finnsap, we design and develop high-performance, user-centric mobile applications tailored to your business needs. Whether it{"'"}s iOS, Android, or cross-platform, our expert developers build feature-rich apps that enhance user experience and drive business growth.
+                  At <span className='font-semibold'>FINNSAP</span>, we design and develop high-performance, user-centric mobile applications tailored to your business needs. Whether it{"'"}s iOS, Android, or cross-platform, our expert developers build feature-rich apps that enhance user experience and drive business growth.
                 </p>
               </div>
             </div>

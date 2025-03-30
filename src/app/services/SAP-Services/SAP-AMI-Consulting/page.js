@@ -21,9 +21,7 @@ export default function SapAmiConsulting() {
             <span>SAP Automated Metering Infrastructure Services</span>
           </h1>
           <p className='text-[#043e96] text-lg md:text-xl font-light'>
-            <span className='font-semibold'>Overview: </span>
-            SAP Automated Metering Infrastructure (AMI) enables utility companies to automate the reading of meters and manage
-            consumption data efficiently.
+            At <span className='font-semibold'>FINNSAP</span>, SAP Automated Metering Infrastructure (AMI) enables utility companies to automate the reading of meters and manage consumption data efficiently.
           </p>
         </div>
         <div className={`${unbounded.className} gap-6 lg:gap-12 mt-4`}>

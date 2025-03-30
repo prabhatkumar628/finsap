@@ -56,8 +56,7 @@ export default function MobileAppSupport() {
               </div>
               <div className={`order-1 md:order-2 col-span-12 md:col-span-7 ${unbounded.className} flex items-center`}>
                 <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                  <span className='font-semibold'>Overview: </span>
-                  At Finnsap, we provide end-to-end mobile app support and maintenance services to ensure your app remains secure, up-to-date, and fully optimized. Whether it{"'"}s bug fixes, performance enhancements, feature updates, or security patches, our expert team ensures seamless app functionality and an enhanced user experience.
+                  At <span className='font-semibold'>FINNSAP</span>, we provide end-to-end mobile app support and maintenance services to ensure your app remains secure, up-to-date, and fully optimized. Whether it{"'"}s bug fixes, performance enhancements, feature updates, or security patches, our expert team ensures seamless app functionality and an enhanced user experience.
                 </p>
               </div>
             </div>

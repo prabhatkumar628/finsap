@@ -21,9 +21,7 @@ export default function Page() {
                         <span>SAP IS-Oil & Gas Consulting</span>
                     </h1>
                     <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                        <span className='font-semibold'>Overview: </span>
-                        SAP IS-Oil & Gas is a solution designed specifically for the oil and gas industry, offering features to manage upstream,
-                        midstream, and downstream operations.
+                        At <span className='font-semibold'>FINNSAP</span>, SAP IS-Oil & Gas is a solution designed specifically for the oil and gas industry, offering features to manage upstream, midstream, and downstream operations.
                     </p>
                 </div>
                 <div className={`${unbounded.className} gap-6 lg:gap-12 mt-4`}>

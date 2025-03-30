@@ -24,7 +24,7 @@ export default function SapServicesPortfolio() {
           <div className={`${unbounded.className}  gap-6 lg:gap-12 mt-4`}>
             <div className=' flex flex-col gap-4 md:gap-8'>
               <p className='text-[#043e96] md:text-lg xl:text-xl font-light'>
-                FINNSAP is a SAP focused organisation, offering wide range of services to our clients with prime
+                <span className='font-semibold'>FINNSAP</span> is a SAP focused organisation, offering wide range of services to our clients with prime
                 emphasis on industry verticals like Utilities, Oil & Gas and Public Sector.
               </p>
               <p className='text-[#043e96] md:text-lg xl:text-xl font-light'>

@@ -21,9 +21,7 @@ export default function SapEccAms() {
             <span> SAP ECC AMS (Application Management Services)</span>
           </h1>
           <p className='text-[#043e96] text-lg md:text-xl font-light'>
-            <span className='font-semibold'>Overview: </span>
-            SAP ECC (Enterprise Central Component) is a core part of your business operations, and our Application Management
-            Services ensure it runs smoothly with maximum efficiency.
+            At <span className='font-semibold'>FINNSAP</span>, we ensure that SAP ECC (Enterprise Central Component), a core part of your business operations, runs smoothly with maximum efficiency through our Application Management Services.
           </p>
         </div>
         <div className={`${unbounded.className} gap-6 lg:gap-12 mt-4`}>

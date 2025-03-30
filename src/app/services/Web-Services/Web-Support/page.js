@@ -55,8 +55,7 @@ export default function WebSupport() {
               </div>
               <div className={`order-1 md:order-2 col-span-12 md:col-span-7 ${unbounded.className} flex items-center`}>
                 <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                  <span className='font-semibold'>Overview: </span>
-                  At Finnsap, we provide reliable and proactive web support & maintenance services to ensure your website remains updated, secure, and high-performing. Whether you need bug fixes, security updates, performance optimization, or content management, our expert team is here to help.
+                  At <span className='font-semibold'>FINNSAP</span>, we provide reliable and proactive web support & maintenance services to ensure your website remains updated, secure, and high-performing. Whether you need bug fixes, security updates, performance optimization, or content management, our expert team is here to help.
                 </p>
               </div>
             </div>

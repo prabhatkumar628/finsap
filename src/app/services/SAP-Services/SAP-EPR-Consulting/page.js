@@ -20,10 +20,7 @@ export default function SapEprConsulting() {
             <span>SAP ERP Consulting</span>
           </h1>
           <p className='text-[#043e96] text-lg md:text-xl font-light'>
-            <span className='font-semibold'>Overview: </span>
-            SAP S/4 HANA is a next-generation ERP suite designed to help businesses run smarter, faster, and more
-            efficiently. It simplifies business processes, integrates operations, and provides real-time data insights. With its in-memory
-            computing capabilities, it empowers businesses to make data-driven decisions with speed and agility.
+            At <span className='font-semibold'>FINNSAP</span>, SAP S/4HANA is a next-generation ERP suite designed to help businesses run smarter, faster, and more efficiently. It simplifies business processes, integrates operations, and provides real-time data insights. With its in-memory computing capabilities, it empowers businesses to make data-driven decisions with speed and agility.
           </p>
         </div>
         <div className={`${unbounded.className}  gap-6 lg:gap-12 mt-4`}>

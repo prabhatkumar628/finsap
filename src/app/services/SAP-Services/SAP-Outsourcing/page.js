@@ -84,7 +84,6 @@ export default function SapOutsourcing() {
                             <span>SAP Outsourcing: Optimize, Innovate & Scale with Confidence</span>
                         </h1>
                         <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                            <span className='font-semibold'>Overview: </span>
                             At <span className='font-semibold'>FINNSAP</span>, we specialize in <span className='font-semibold'>SAP Outsourcing Services</span> designed to help
                             businesses enhance efficiency, reduce costs, and drive innovation.
                             Whether you require full-scale SAP implementation, dedicated support,
@@ -178,3 +177,56 @@ export default function SapOutsourcing() {
 
     )
 }
+
+export const generateMetadata = () => {
+    return {
+      title: "SAP Outsourcing Services - Optimize, Innovate, and Scale with Finnsap",
+      description:
+        "Enhance your business efficiency with Finnsap’s SAP Outsourcing Services. Get expert SAP consulting, implementation, and support to optimize operations and scale seamlessly.",
+      keywords: [
+        "SAP Outsourcing Services",
+        "SAP Managed Services",
+        "SAP Consulting Outsourcing",
+        "SAP BPO Services",
+        "SAP Support and Maintenance",
+        "Enterprise SAP Outsourcing",
+        "SAP IT Outsourcing",
+        "SAP AMS (Application Management Services)",
+        "SAP Offshore Development",
+        "SAP Business Optimization",
+        "SAP Implementation Outsourcing",
+        "SAP Hosting Services",
+        "Cloud SAP Outsourcing",
+        "SAP Migration Support",
+        "SAP Integration Outsourcing",
+      ],
+      openGraph: {
+        title: "SAP Outsourcing Services - Expert SAP Solutions by Finnsap",
+        description:
+          "Partner with Finnsap for top-tier SAP Outsourcing Services. From consulting to managed services, we optimize your SAP ecosystem for efficiency and growth.",
+        url: `${process.env.BASE_URL}/services/SAP-Services/SAP-Outsourcing`,
+        siteName: "Finnsap",
+        images: [
+          {
+            url: `${process.env.BASE_URL}/og.png`,
+            width: 1200,
+            height: 630,
+            alt: "SAP Outsourcing Services - Finnsap",
+          },
+        ],
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "SAP Outsourcing Services - Optimize, Innovate & Scale",
+        description:
+          "Boost your business with Finnsap's SAP Outsourcing Services. We provide end-to-end SAP support, consulting, and implementation for enterprises.",
+        images: [`${process.env.BASE_URL}/og.png`],
+      },
+      robots: "index, follow",
+      alternates: {
+        canonical: `${process.env.BASE_URL}/services/SAP-Services/SAP-Outsourcing`,
+      },
+    };
+  };
+  

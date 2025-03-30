@@ -55,8 +55,7 @@ export default function WebDevelopment() {
               </div>
               <div className={`order-1 md:order-2 col-span-12 md:col-span-7 ${unbounded.className} flex items-center`}>
                 <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                  <span className='font-semibold'>Overview: </span>
-                  At Finnsap, we specialize in creating dynamic and feature-rich web solutions tailored to your business needs. Our team of expert developers leverages the latest technologies, frameworks, and best practices to deliver scalable, secure, and high-performance websites.
+                  At <span className='font-semibold'>FINNSAP</span>, we specialize in creating dynamic and feature-rich web solutions tailored to your business needs. Our team of expert developers leverages the latest technologies, frameworks, and best practices to deliver scalable, secure, and high-performance websites.
                 </p>
               </div>
             </div>

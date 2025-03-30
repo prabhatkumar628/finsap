@@ -21,9 +21,7 @@ export default function SapBrim() {
             <span>SAP BRIM (Billing and Revenue Innovation Management)</span>
           </h1>
           <p className='text-[#043e96] text-lg md:text-xl font-light'>
-            <span className='font-semibold'>Overview: </span>
-            SAP BRIM is a comprehensive suite for managing complex billing, invoicing, and revenue management processes for
-            subscription-based, usage-based, and contract-based business models.
+            At <span className='font-semibold'>FINNSAP</span>, SAP BRIM is a comprehensive suite for managing complex billing, invoicing, and revenue management processes for subscription-based, usage-based, and contract-based business models.
           </p>
         </div>
         <div className={`${unbounded.className} gap-6 lg:gap-12 mt-4`}>

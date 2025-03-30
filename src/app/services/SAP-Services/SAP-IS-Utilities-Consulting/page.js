@@ -21,10 +21,7 @@ export default function SapIsUtilities() {
                         <span> SAP IS-Utilities Consulting</span>
                     </h1>
                     <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                        <span className='font-semibold'>Overview: </span>
-                        SAP IS-U (Industry Solution for Utilities) is a comprehensive solution designed for utility companies, managing all aspects
-                        of operations from billing to customer engagement. Our SAP IS-U consulting services help utility businesses streamline their
-                        processes and enhance their customer service.
+                        At <span className='font-semibold'>FINNSAP</span>, SAP IS-U (Industry Solution for Utilities) is a comprehensive solution designed for utility companies, managing all aspects of operations from billing to customer engagement. Our SAP IS-U consulting services help utility businesses streamline their processes and enhance their customer service.
                     </p>
                 </div>
                 <div className={`${unbounded.className}  gap-6 lg:gap-12 mt-4`}>

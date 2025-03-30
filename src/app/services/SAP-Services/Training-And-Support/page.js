@@ -59,8 +59,7 @@ export default function TrainingAndSupport() {
                             <span>Corporate Training & Support</span>
                         </h1>
                         <p className='text-[#043e96] text-lg md:text-xl font-light'>
-                            <span className='font-semibold'>Overview: </span>
-                            At FINNSAP, we provide comprehensive corporate training programs and dedicated support services to ensure your team can effectively utilize SAP systems post-deployment. Our tailored solutions help businesses enhance productivity, improve system efficiency, and drive long-term success. Whether you aim to upskill your workforce, implement new systems, or optimize customer service, we have the expertise and resources to support your goals.
+                            At <span className='font-semibold'>FINNSAP</span>, we provide comprehensive corporate training programs and dedicated support services to ensure your team can effectively utilize SAP systems post-deployment. Our tailored solutions help businesses enhance productivity, improve system efficiency, and drive long-term success. Whether you aim to upskill your workforce, implement new systems, or optimize customer service, we have the expertise and resources to support your goals.
                         </p>
                     </div>
                     <div className={`${unbounded.className} gap-6 lg:gap-12 mt-4`}>
@@ -122,3 +121,56 @@ export default function TrainingAndSupport() {
         </>
     )
 }
+
+export const generateMetadata = () => {
+    return {
+      title: "SAP Corporate Training & Support - Expert SAP Learning by Finnsap",
+      description:
+        "Empower your workforce with Finnsap’s SAP Corporate Training & Support services. Get expert-led SAP training and dedicated support for seamless business operations.",
+      keywords: [
+        "SAP Corporate Training",
+        "SAP Training & Support",
+        "Corporate SAP Learning",
+        "SAP Professional Training",
+        "SAP Employee Training",
+        "SAP Certification Training",
+        "SAP Skill Development",
+        "Enterprise SAP Training",
+        "SAP Implementation Training",
+        "SAP End-User Training",
+        "SAP Functional Training",
+        "SAP Technical Training",
+        "SAP Business Process Training",
+        "SAP AMS (Application Management Services) Training",
+        "SAP Enterprise Support",
+      ],
+      openGraph: {
+        title: "SAP Corporate Training & Support - Enhance SAP Skills with Finnsap",
+        description:
+          "Boost your team's SAP expertise with Finnsap’s Corporate Training & Support. Our SAP experts deliver top-notch training and ongoing support for enterprises.",
+        url: `${process.env.BASE_URL}/services/SAP-Services/Training-And-Support`,
+        siteName: "Finnsap",
+        images: [
+          {
+            url: `${process.env.BASE_URL}/og.png`,
+            width: 1200,
+            height: 630,
+            alt: "SAP Corporate Training & Support - Finnsap",
+          },
+        ],
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "SAP Corporate Training & Support - Learn & Grow with Finnsap",
+        description:
+          "Get expert SAP Corporate Training & Support from Finnsap. Enhance your team's SAP skills with customized training and expert support services.",
+        images: [`${process.env.BASE_URL}/og.png`],
+      },
+      robots: "index, follow",
+      alternates: {
+        canonical: `${process.env.BASE_URL}/services/SAP-Services/Training-And-Support`,
+      },
+    };
+  };
+  
