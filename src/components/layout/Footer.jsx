@@ -18,13 +18,13 @@ export default function Footer() {
                     <div className="h-full w-full order-3 md:order-3 lg:order-3 col-span-6 md:col-span-4 lg:col-span-3">
                         <div className="sm:grid  sm:place-items-center text-end sm:text-center">
                             <div className="flex justify-end">
-                                <h3 className={`font-semibold text-end  uppercase text-xl relative py-4 before:content-[''] before:absolute before:bottom-0 before:right-0 sm:before:left-[50%] sm:before:translate-x-[-50%] before:w-[30px] before:h-[3px] hover:before:w-full w-max before:transition-all duration-200 ease-linear before:bg-[#0ed4ff]`}>Company</h3>
+                                <h3 className={`font-semibold text-end  uppercase text-xl relative py-4 before:content-[''] before:absolute before:bottom-0 before:right-0 sm:before:left-[50%] sm:before:translate-x-[-50%] before:w-[30px] before:h-[3px] hover:before:w-full w-max before:transition-all duration-200 ease-linear before:bg-[#0ed4ff]`}>Web Services</h3>
                             </div>
                             <div className="mt-4 text-sm flex flex-col gap-2">
-                                <p><Link href={"/"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Home</Link></p>
-                                <p><Link href={"/industries/SAP-Oil-And-Gas-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Industries</Link></p>
-                                <p><Link href={"/about"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">About Us</Link></p>
-                                <p><Link href={"/contact"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Contact Us</Link></p>
+                                <p><Link href={"/services/Web-Services/Web-Development"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Web Development</Link></p>
+                                <p><Link href={"/services/Web-Services/Web-Support"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Web Support</Link></p>
+                                <p><Link href={"/services/Web-Services/Mobile-App-Development"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Mobile App Development</Link></p>
+                                <p><Link href={"/services/Web-Services/Mobile-App-Support"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Mobile App Support</Link></p>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ export default function Footer() {
                             <h4 className={h4css}>FOLLOW US</h4>
                             <Link href={"/"} className='hidden lg:block'>
                                 <div className=" place-items-center my-4 grid">
-                                    <img className="min-w-[100px] w-[100px] rounded-md" src="/og.png" alt="finnsap logo" />
+                                    <img className="min-w-[80px] w-[80px] rounded-md" src="/og.png" alt="finnsap logo" />
                                 </div>
                             </Link>
 
@@ -53,13 +53,13 @@ export default function Footer() {
                     <div className="h-full w-full order-1 md:order-1 lg:order-2 col-span-6 md:col-span-4 lg:col-span-3">
                         <div className="sm:grid  sm:place-items-center text-end sm:text-center">
                             <div className="flex justify-end">
-                                <h4 className={`font-semibold text-end  uppercase text-xl relative py-4 before:content-[''] before:absolute before:bottom-0 before:right-0 sm:before:left-[50%] sm:before:translate-x-[-50%] before:w-[30px] before:h-[3px] hover:before:w-full w-max before:transition-all duration-200 ease-linear before:bg-[#0ed4ff]`}>Web Services</h4>
+                                <h4 className={`font-semibold text-end  uppercase text-xl relative py-4 before:content-[''] before:absolute before:bottom-0 before:right-0 sm:before:left-[50%] sm:before:translate-x-[-50%] before:w-[30px] before:h-[3px] hover:before:w-full w-max before:transition-all duration-200 ease-linear before:bg-[#0ed4ff]`}>SAP Consulting</h4>
                             </div>
                             <div className="mt-4 text-sm flex flex-col gap-2">
-                                <p><Link href={"/services/Web-Services/Web-Development"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Web Development</Link></p>
-                                <p><Link href={"/services/Web-Services/Web-Support"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Web Support</Link></p>
-                                <p><Link href={"/services/Web-Services/Mobile-App-Development"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Mobile App Development</Link></p>
-                                <p><Link href={"/services/Web-Services/Mobile-App-Support"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Mobile App Support</Link></p>
+                                <p><Link href={"/services/SAP-Services/SAP-EPR-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP ERP Consulting</Link></p>
+                                <p><Link href={"/services/SAP-Services/SAP-IS-Utilities-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP IS-Utilities Consulting</Link></p>
+                                <p><Link href={"/services/SAP-Services/SAP-BRIM-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP BRIM Consulting</Link></p>
+                                <p><Link href={"/services/SAP-Services/SAP-AMI-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP AMI Consulting</Link></p>
                             </div>
                         </div>
                     </div>
@@ -70,11 +70,9 @@ export default function Footer() {
                             </div>
                             <div className="mt-4 text-sm flex flex-col gap-2">
                                 <p><Link href={"/services/SAP-Services/SAP-Services-Portfolio"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP Services Portfolio</Link></p>
-                                <p><Link href={"/services/SAP-Services/SAP-EPR-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP ERP Consulting</Link></p>
-                                <p><Link href={"/services/SAP-Services/SAP-IS-Utilities-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP IS-Utilities Consulting</Link></p>
-                                <p><Link href={"/services/SAP-Services/SAP-BRIM-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP BRIM Consulting</Link></p>
                                 <p><Link href={"/services/SAP-Services/SAP-ECC-S4HANA-AMS"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP ECC-S4HANA AMS</Link></p>
-                                <p><Link href={"/services/SAP-Services/SAP-AMI-Consulting"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP AMI Consulting</Link></p>
+                                <p><Link href={"/services/SAP-Services/SAP-Outsourcing"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">SAP Outsourcing</Link></p>
+                                <p><Link href={"/services/SAP-Services/Training-And-Support"} className="transition-all duration-200 ease-linear hover:text-[#0ed4ff] w-fit">Corporate Training & Support</Link></p>
                             </div>
                         </div>
                     </div>

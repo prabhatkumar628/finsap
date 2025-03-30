@@ -17,6 +17,7 @@ export default function Header() {
     const [services, setServices] = useState(false)
     const [sapServices, setSapServices] = useState(false)
     const [appServices, setAppServices] = useState(false)
+    const [sapConsulting, setSapConsulting] = useState(false)
     const [navFixed, setNavFixed] = useState(false)
     const [lastScrollY, setLastScrollY] = useState(0)
     const servicesRef = useRef()
@@ -98,7 +99,7 @@ export default function Header() {
                                 <span>Services</span>
                                 <IoChevronDownSharp className="hidden md:block" />
                             </div>
-                            <div ref={servicesRef} className={`services w-full ${services ? "md:max-h-[300px]" : "md:!shadow-none md:!py-0"} transition-all duration-300 ease-in-out md:max-h-0 md:overflow-hidden md:absolute top-[130%] left-0 rounded-md bg-white grid grid-cols-12 p-2 md:p-4 xl:px-10 xl:py-6 gap-2 z-50`}>
+                            <div ref={servicesRef} className={`services w-full ${services ? "md:max-h-[320px]" : "md:!shadow-none md:!py-0"} transition-all duration-300 ease-in-out md:max-h-0 md:overflow-hidden md:absolute top-[130%] left-0 rounded-md bg-white grid grid-cols-12 p-2 md:p-4 xl:px-10 xl:py-6 gap-2 z-50`}>
                                 <div className="col-span-12 md:col-span-4 lg:col-span-3">
                                     <div
                                         onClick={() => setSapServices(prev => !prev)}
@@ -113,6 +114,27 @@ export default function Header() {
                                             <Link className={`${pathname == "/services/SAP-Services/SAP-Services-Portfolio" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-Services-Portfolio"}>SAP Services Portfolio</Link>
                                         </li>
                                         <li className="flex mt-3">
+                                            <Link className={`${pathname == "/services/SAP-Services/SAP-ECC-S4HANA-AMS" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-ECC-S4HANA-AMS"}>SAP ECC-S4HANA AMS</Link>
+                                        </li>
+                                        <li className="flex mt-3">
+                                            <Link className={`${pathname == "/services/SAP-Services/SAP-Outsourcing" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-Outsourcing"}>SAP Outsourcing</Link>
+                                        </li>
+                                        <li className="flex mt-3">
+                                            <Link className={`${pathname == "/services/SAP-Services/Training-And-Support" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/Training-And-Support"}>Corporate Training & Support</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="col-span-12 md:col-span-4 lg:col-span-3">
+                                    <div
+                                        onClick={() => setSapConsulting(prev => !prev)}
+                                        className="font-bold flex items-center gap-2 cursor-pointer px-2 py-1 md:pb-2 md:pt-0 text-[#043e96] transition"
+                                    >
+                                        <span>SAP Consulting</span>
+                                        <IoChevronDownSharp className={`md:hidden transition-transform duration-300 ${sapConsulting ? "rotate-180" : ""}`} />
+                                    </div>
+
+                                    <ul className={`overflow-hidden transition-all duration-300 ease-in-out ${sapConsulting ? "max-h-[200px] opacity-100 pt-2" : "max-h-0 opacity-0"} md:pt-2 md:max-h-none md:opacity-100`}>
+                                        <li className="flex">
                                             <Link className={`${pathname == "/services/SAP-Services/SAP-EPR-Consulting" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-EPR-Consulting"}>SAP ERP Consulting</Link>
                                         </li>
                                         <li className="flex mt-3">
@@ -120,9 +142,6 @@ export default function Header() {
                                         </li>
                                         <li className="flex mt-3">
                                             <Link className={`${pathname == "/services/SAP-Services/SAP-BRIM-Consulting" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-BRIM-Consulting"}>SAP BRIM Consulting</Link>
-                                        </li>
-                                        <li className="flex mt-3">
-                                            <Link className={`${pathname == "/services/SAP-Services/SAP-ECC-S4HANA-AMS" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-ECC-S4HANA-AMS"}>SAP ECC-S4HANA AMS</Link>
                                         </li>
                                         <li className="flex mt-3">
                                             <Link className={`${pathname == "/services/SAP-Services/SAP-AMI-Consulting" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-AMI-Consulting"}>SAP AMI Consulting</Link>
@@ -153,10 +172,10 @@ export default function Header() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-span-12 md:col-span-4 lg:col-span-6 hidden text-center md:grid place-items-center text-5xl">
+                                <div className="col-span-12 md:col-span-4 lg:col-span-3 hidden text-center lg:grid place-items-center text-5xl">
                                     <div className="relative w-full h-[260px] overflow-hidden grid place-items-center">
                                         <Image
-                                            className="object-cover rounded-4xl overflow-hidden"
+                                            className="object-cover w-full h-full rounded-xl overflow-hidden"
                                             src="/Layout/popbanner.jpg"
                                             alt="Oil & Gas Industry"
                                             fill
