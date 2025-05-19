@@ -6,3 +6,6 @@
         clip-path: polygon(100% 0, 90% 50%, 100% 100%, 10% 100%, 0 50%, 10% 0);
     }
 }
+.text-shadow{
+    text-shadow: 0px 0px 2px black;
+}

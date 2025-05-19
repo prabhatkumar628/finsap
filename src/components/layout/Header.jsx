@@ -21,6 +21,8 @@ export default function Header() {
     const [navFixed, setNavFixed] = useState(false)
     const [lastScrollY, setLastScrollY] = useState(0)
     const servicesRef = useRef()
+    const sidebarRef = useRef()
+    const navBarBtn = useRef(null)
     const pathname = usePathname()
     useEffect(() => {
         setMenu(false)
@@ -68,6 +70,24 @@ export default function Header() {
         };
     }, []);
 
+    useEffect(() => {
+        const handleClickOutSideSidebar = (e) => {
+            if (
+                sidebarRef.current &&
+                !sidebarRef.current.contains(e.target) &&
+                (!navBarBtn.current || !navBarBtn.current.contains(e.target))
+            ) {
+                setMenu(false);
+            }
+        };
+        document.addEventListener("click", handleClickOutSideSidebar);
+        window.addEventListener("scroll", handleClickOutSideSidebar);
+        return () => {
+            document.removeEventListener("click", handleClickOutSideSidebar);
+            window.removeEventListener("scroll", handleClickOutSideSidebar);
+        };
+    }, []);
+
     return (
         <header style={{ boxShadow: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em" }}
             className={`${navFixed ? "fixed top-0 left-0" : "static"} w-full p-3 px-4 sm:min-h-[80px] sm:px-10 md:px-16 lg:px-24 bg-white !shadow-md z-50 grid place-items-center`}>
@@ -83,7 +103,7 @@ export default function Header() {
                         priority
                     />
                 </Link>
-                <div style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px" }}
+                <div ref={sidebarRef} style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px" }}
                     className={`fixed top-0 right-0 h-screen w-[300px] mr-[-350px] md:mr-0 ${menu ? "!mr-0" : ""} md:static md:w-full md:h-auto bg-white md:!shadow-none md:bg-transparent transition-all duration-300 ease-in-out z-50`}>
                     <div className="p-3 px-4 sm:px-10 grid place-items-end md:hidden">
                         <div onClick={() => setMenu(false)} style={{ boxShadow: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em" }} className="w-[40px] h-[40px] rounded-sm shadow-1 text-[#043e96] grid place-items-center text-3xl">
@@ -146,6 +166,9 @@ export default function Header() {
                                         <li className="flex mt-3">
                                             <Link className={`${pathname == "/services/SAP-Services/SAP-AMI-Consulting" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/services/SAP-Services/SAP-AMI-Consulting"}>SAP AMI Consulting</Link>
                                         </li>
+                                        <li className="flex mt-3">
+                                            <Link className={`${pathname == "/industries/SAP-Oil-And-Gas-Consulting" ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-0 text-sm w-full`} href={"/industries/SAP-Oil-And-Gas-Consulting"}>SAP IS-Oil & Gas Consulting</Link>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div className="col-span-12 md:col-span-4 lg:col-span-3">
@@ -186,9 +209,9 @@ export default function Header() {
                             </div>
                         </li>
 
-                        <li className={`${raleway.className} flex`}>
+                        {/* <li className={`${raleway.className} flex`}>
                             <Link className={`${pathname.startsWith("/industries") ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full`} href={"/industries/SAP-Oil-And-Gas-Consulting"}>Industries</Link>
-                        </li>
+                        </li> */}
                         <li className={`${raleway.className} flex`}>
                             <Link className={`${pathname.startsWith("/about") ? "font-semibold !text-[#0ed4ff]" : ""} text-[#043e96] hover:text-[#0ed4ff] transition px-2 py-1 md:p-2 w-full`} href={"/about"}>About Us</Link>
                         </li>
@@ -208,7 +231,7 @@ export default function Header() {
                             <FaSquareXTwitter />
                         </div>
                     </Link>
-                    <VscThreeBars onClick={() => setMenu(pre => !pre)} className="md:hidden text-[#0ed4ff]" />
+                    <VscThreeBars ref={navBarBtn} onClick={() => setMenu(pre => !pre)} className="md:hidden text-[#0ed4ff]" />
                 </div>
             </nav>
         </header>
