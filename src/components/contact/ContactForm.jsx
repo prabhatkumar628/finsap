@@ -4,14 +4,21 @@ import axios from "axios";
 import { z } from "zod";
 import { Poppins } from 'next/font/google';
 import { useRouter } from "next/navigation";
+import { blockList } from "../../app/lib/blocklist.js";
 import Loading from "@/app/loading";
 const unbounded = Poppins({ subsets: ['latin'], weight: ['200', "300", '500', '600'] });
 
 const contactSchema = z.object({
     name: z.string().min(3, "Name must be at least 3 characters long"),
-    email: z.string().email("Invalid email address"),
+    email: z.string().email("Invalid email address").regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/, "Invalid email format"),
     subject: z.string().min(5, "Subject must be at least 5 characters long"),
     message: z.string().min(10, "Message must be at least 10 characters long"),
+}).refine((data) => {
+  const domain = data.email.split("@")[1];
+  return !blockList.includes(domain);
+}, {
+  message: "Disposable email addresses are not allowed",
+  path: ["email"],
 });
 
 const ContactForm = () => {
@@ -44,7 +51,12 @@ const ContactForm = () => {
 
         setLoading(true)
         try {
-            const response = await axios.post("/api/contact", formData);
+            const token = await grecaptcha.execute(
+            process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+            { action: "submit" }
+            );
+
+            const response = await axios.post("/api/contact", {...formData,token});
             if (response.data.success) {
                 setSuccess("Your message has been sent successfully!");
                 setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
